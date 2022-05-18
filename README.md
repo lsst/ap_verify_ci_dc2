@@ -1,5 +1,5 @@
-`ap_verify_dataset_template`
-============================
+ap_verify_ci_dc2
+================
 
 Template repo for developing datasets for use with ap_verify.
 
