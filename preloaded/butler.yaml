@@ -1,0 +1,719 @@
+datastore:
+  cached:
+    cacheable:
+      Exposure: true
+      ExposureF: true
+    default: false
+    expiry:
+      mode: datasets
+      threshold: 4
+    root: null
+  cls: lsst.daf.butler.datastores.fileDatastore.FileDatastore
+  composites:
+    default: false
+    disassembled:
+      __null__: false
+  create: true
+  formatters:
+    ApCorr: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+    AstropyQTable: lsst.daf.butler.formatters.astropyTable.AstropyTableFormatter
+    AstropyTable: lsst.daf.butler.formatters.astropyTable.AstropyTableFormatter
+    Background: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+    BrightStarStamps: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+    BrighterFatterKernel: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+    ButlerLogRecords: lsst.daf.butler.formatters.logs.ButlerLogRecordsFormatter
+    Camera: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+    Catalog: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+    CoaddInputs: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+    Config: lsst.pipe.base.formatters.pexConfig.PexConfigFormatter
+    CrosstalkCalib: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+    DataFrame: lsst.daf.butler.formatters.parquet.ParquetFormatter
+    DecoratedImageU: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+    Defects: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+    Detector: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+    Exposure: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+    ExposureCatalog: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+    ExposureF: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+    ExposureI: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+    ExposureSummaryStats: lsst.daf.butler.formatters.yaml.YamlFormatter
+    ExtendedPsf: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+    Filter: lsst.obs.base.formatters.filter.FilterFormatter
+    FilterLabel: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+    FocalPlaneBackground: lsst.daf.butler.formatters.pickle.PickleFormatter
+    HealSparseMap: lsst.pipe.tasks.healSparseMapping.HealSparseMapFormatter
+    Image: lsst.obs.base.formatters.fitsExposure.FitsImageFormatter
+    ImageF: lsst.obs.base.formatters.fitsExposure.FitsImageFormatter
+    ImageU: lsst.obs.base.formatters.fitsExposure.FitsImageFormatter
+    IsrCalib: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+    Linearizer: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+    Mask: lsst.obs.base.formatters.fitsExposure.FitsMaskFormatter
+    MaskX: lsst.obs.base.formatters.fitsExposure.FitsMaskFormatter
+    MaskedImageF: lsst.obs.base.formatters.fitsMaskedImage.FitsMaskedImageFormatter
+    MetricValue:
+      formatter: lsst.daf.butler.formatters.yaml.YamlFormatter
+      parameters:
+        unsafe_dump: true
+    NumpyArray: lsst.daf.butler.formatters.pickle.PickleFormatter
+    ObjectMaskCatalog: lsst.pipe.tasks.objectMasks.RegionFileFormatter
+    Packages:
+      formatter: lsst.daf.butler.formatters.packages.PackagesFormatter
+      parameters:
+        format: yaml
+    PeakCatalog: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+    PhotoCalib: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+    PhotonTransferCurveDataset: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+    Plot: lsst.daf.butler.formatters.matplotlib.MatplotlibFormatter
+    Polygon: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+    PropertyList:
+      formatter: lsst.daf.butler.formatters.yaml.YamlFormatter
+      parameters:
+        unsafe_dump: true
+    PropertySet:
+      formatter: lsst.daf.butler.formatters.yaml.YamlFormatter
+      parameters:
+        unsafe_dump: true
+    Psf: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+    QECurve: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+    SimpleCatalog: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+    SkyMap: lsst.daf.butler.formatters.pickle.PickleFormatter
+    SourceCatalog: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+    Spectraction: lsst.atmospec.formatters.SpectractionFormatter
+    SpectractorImage: lsst.atmospec.formatters.SpectractorImageFormatter
+    SpectractorSpectrum: lsst.atmospec.formatters.SpectractorSpectrumFormatter
+    Stamps: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+    StampsBase: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+    StructuredDataDict: lsst.daf.butler.formatters.yaml.YamlFormatter
+    TablePersistable: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+    TaskMetadata: lsst.daf.butler.formatters.json.JsonFormatter
+    TransmissionCurve: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+    VisitInfo: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+    Wcs: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+    default:
+      lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter:
+        recipe: default
+    int: lsst.daf.butler.formatters.json.JsonFormatter
+    write_recipes:
+      lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter:
+        default:
+          image:
+            compression:
+              algorithm: GZIP_SHUFFLE
+            scaling:
+              algorithm: NONE
+          mask:
+            compression:
+              algorithm: GZIP_SHUFFLE
+            scaling:
+              algorithm: NONE
+          variance:
+            compression:
+              algorithm: GZIP_SHUFFLE
+            scaling:
+              algorithm: NONE
+        lossless:
+          image:
+            compression:
+              algorithm: GZIP_SHUFFLE
+            scaling:
+              algorithm: NONE
+          mask:
+            compression:
+              algorithm: GZIP_SHUFFLE
+            scaling:
+              algorithm: NONE
+          variance:
+            compression:
+              algorithm: GZIP_SHUFFLE
+            scaling:
+              algorithm: NONE
+        lossyBasic:
+          image:
+            compression:
+              algorithm: RICE
+            scaling:
+              algorithm: STDEV_POSITIVE
+              bitpix: 32
+              maskPlanes: &id001
+              - NO_DATA
+              quantizeLevel: 10.0
+              quantizePad: 10.0
+          mask:
+            compression:
+              algorithm: GZIP_SHUFFLE
+            scaling:
+              algorithm: NONE
+          variance:
+            compression:
+              algorithm: RICE
+            scaling:
+              algorithm: STDEV_POSITIVE
+              bitpix: 32
+              maskPlanes: *id001
+              quantizeLevel: 10.0
+              quantizePad: 10.0
+        noCompression:
+          image:
+            compression:
+              algorithm: NONE
+            scaling:
+              algorithm: NONE
+          mask:
+            compression:
+              algorithm: NONE
+            scaling:
+              algorithm: NONE
+          variance:
+            compression:
+              algorithm: NONE
+            scaling:
+              algorithm: NONE
+      lsst.obs.base.formatters.fitsExposure.FitsImageFormatter:
+        default:
+          image:
+            compression:
+              algorithm: GZIP_SHUFFLE
+            scaling:
+              algorithm: NONE
+          mask:
+            compression:
+              algorithm: GZIP_SHUFFLE
+            scaling:
+              algorithm: NONE
+          variance:
+            compression:
+              algorithm: GZIP_SHUFFLE
+            scaling:
+              algorithm: NONE
+        lossless:
+          image:
+            compression:
+              algorithm: GZIP_SHUFFLE
+            scaling:
+              algorithm: NONE
+          mask:
+            compression:
+              algorithm: GZIP_SHUFFLE
+            scaling:
+              algorithm: NONE
+          variance:
+            compression:
+              algorithm: GZIP_SHUFFLE
+            scaling:
+              algorithm: NONE
+        lossyBasic:
+          image:
+            compression:
+              algorithm: RICE
+            scaling:
+              algorithm: STDEV_POSITIVE
+              bitpix: 32
+              maskPlanes: *id001
+              quantizeLevel: 10.0
+              quantizePad: 10.0
+          mask:
+            compression:
+              algorithm: GZIP_SHUFFLE
+            scaling:
+              algorithm: NONE
+          variance:
+            compression:
+              algorithm: RICE
+            scaling:
+              algorithm: STDEV_POSITIVE
+              bitpix: 32
+              maskPlanes: *id001
+              quantizeLevel: 10.0
+              quantizePad: 10.0
+        noCompression:
+          image:
+            compression:
+              algorithm: NONE
+            scaling:
+              algorithm: NONE
+          mask:
+            compression:
+              algorithm: NONE
+            scaling:
+              algorithm: NONE
+          variance:
+            compression:
+              algorithm: NONE
+            scaling:
+              algorithm: NONE
+      lsst.obs.base.formatters.fitsExposure.FitsMaskFormatter:
+        default:
+          image:
+            compression:
+              algorithm: GZIP_SHUFFLE
+            scaling:
+              algorithm: NONE
+          mask:
+            compression:
+              algorithm: GZIP_SHUFFLE
+            scaling:
+              algorithm: NONE
+          variance:
+            compression:
+              algorithm: GZIP_SHUFFLE
+            scaling:
+              algorithm: NONE
+        lossless:
+          image:
+            compression:
+              algorithm: GZIP_SHUFFLE
+            scaling:
+              algorithm: NONE
+          mask:
+            compression:
+              algorithm: GZIP_SHUFFLE
+            scaling:
+              algorithm: NONE
+          variance:
+            compression:
+              algorithm: GZIP_SHUFFLE
+            scaling:
+              algorithm: NONE
+        lossyBasic:
+          image:
+            compression:
+              algorithm: RICE
+            scaling:
+              algorithm: STDEV_POSITIVE
+              bitpix: 32
+              maskPlanes: *id001
+              quantizeLevel: 10.0
+              quantizePad: 10.0
+          mask:
+            compression:
+              algorithm: GZIP_SHUFFLE
+            scaling:
+              algorithm: NONE
+          variance:
+            compression:
+              algorithm: RICE
+            scaling:
+              algorithm: STDEV_POSITIVE
+              bitpix: 32
+              maskPlanes: *id001
+              quantizeLevel: 10.0
+              quantizePad: 10.0
+        noCompression:
+          image:
+            compression:
+              algorithm: NONE
+            scaling:
+              algorithm: NONE
+          mask:
+            compression:
+              algorithm: NONE
+            scaling:
+              algorithm: NONE
+          variance:
+            compression:
+              algorithm: NONE
+            scaling:
+              algorithm: NONE
+      lsst.obs.base.formatters.fitsExposure.FitsMaskedImageFormatter:
+        default:
+          image:
+            compression:
+              algorithm: GZIP_SHUFFLE
+            scaling:
+              algorithm: NONE
+          mask:
+            compression:
+              algorithm: GZIP_SHUFFLE
+            scaling:
+              algorithm: NONE
+          variance:
+            compression:
+              algorithm: GZIP_SHUFFLE
+            scaling:
+              algorithm: NONE
+        lossless:
+          image:
+            compression:
+              algorithm: GZIP_SHUFFLE
+            scaling:
+              algorithm: NONE
+          mask:
+            compression:
+              algorithm: GZIP_SHUFFLE
+            scaling:
+              algorithm: NONE
+          variance:
+            compression:
+              algorithm: GZIP_SHUFFLE
+            scaling:
+              algorithm: NONE
+        lossyBasic:
+          image:
+            compression:
+              algorithm: RICE
+            scaling:
+              algorithm: STDEV_POSITIVE
+              bitpix: 32
+              maskPlanes: *id001
+              quantizeLevel: 10.0
+              quantizePad: 10.0
+          mask:
+            compression:
+              algorithm: GZIP_SHUFFLE
+            scaling:
+              algorithm: NONE
+          variance:
+            compression:
+              algorithm: RICE
+            scaling:
+              algorithm: STDEV_POSITIVE
+              bitpix: 32
+              maskPlanes: *id001
+              quantizeLevel: 10.0
+              quantizePad: 10.0
+        noCompression:
+          image:
+            compression:
+              algorithm: NONE
+            scaling:
+              algorithm: NONE
+          mask:
+            compression:
+              algorithm: NONE
+            scaling:
+              algorithm: NONE
+          variance:
+            compression:
+              algorithm: NONE
+            scaling:
+              algorithm: NONE
+      lsst.obs.base.formatters.fitsExposure.StandardFitsImageFormatterBase:
+        default:
+          image:
+            compression:
+              algorithm: GZIP_SHUFFLE
+            scaling:
+              algorithm: NONE
+          mask:
+            compression:
+              algorithm: GZIP_SHUFFLE
+            scaling:
+              algorithm: NONE
+          variance:
+            compression:
+              algorithm: GZIP_SHUFFLE
+            scaling:
+              algorithm: NONE
+        lossless:
+          image:
+            compression:
+              algorithm: GZIP_SHUFFLE
+            scaling:
+              algorithm: NONE
+          mask:
+            compression:
+              algorithm: GZIP_SHUFFLE
+            scaling:
+              algorithm: NONE
+          variance:
+            compression:
+              algorithm: GZIP_SHUFFLE
+            scaling:
+              algorithm: NONE
+        lossyBasic:
+          image:
+            compression:
+              algorithm: RICE
+            scaling:
+              algorithm: STDEV_POSITIVE
+              bitpix: 32
+              maskPlanes: *id001
+              quantizeLevel: 10.0
+              quantizePad: 10.0
+          mask:
+            compression:
+              algorithm: GZIP_SHUFFLE
+            scaling:
+              algorithm: NONE
+          variance:
+            compression:
+              algorithm: RICE
+            scaling:
+              algorithm: STDEV_POSITIVE
+              bitpix: 32
+              maskPlanes: *id001
+              quantizeLevel: 10.0
+              quantizePad: 10.0
+        noCompression:
+          image:
+            compression:
+              algorithm: NONE
+            scaling:
+              algorithm: NONE
+          mask:
+            compression:
+              algorithm: NONE
+            scaling:
+              algorithm: NONE
+          variance:
+            compression:
+              algorithm: NONE
+            scaling:
+              algorithm: NONE
+  records:
+    table: file_datastore_records
+  root: <butlerRoot>
+  templates:
+    default: '{run:/}/{datasetType}.{component:?}/{tract:?}/{patch:?}/{visit.day_obs:?}/{exposure.day_obs:?}/{band:?}/{subfilter:?}/{physical_filter:?}/{visit:?}/{exposure.obs_id:?}/{datasetType}_{component:?}_{instrument:?}_{tract:?}_{patch:?}_{band:?}_{physical_filter:?}_{visit:?}_{exposure.obs_id:?}_{detector.full_name:?}_{skymap:?}_{skypix:?}_{run}'
+    physical_filter+detector+exposure: '{run:/}/{datasetType}.{component:?}/{exposure.day_obs}/{exposure.obs_id}/{datasetType}_{component:?}_{instrument:?}_{physical_filter}_{exposure.obs_id}_{detector.full_name}_{run}'
+registry:
+  db: sqlite:///<butlerRoot>/gen3.sqlite3
+  engines:
+    postgresql: lsst.daf.butler.registry.databases.postgresql.PostgresqlDatabase
+    sqlite: lsst.daf.butler.registry.databases.sqlite.SqliteDatabase
+  managers:
+    attributes: lsst.daf.butler.registry.attributes.DefaultButlerAttributeManager
+    collections: lsst.daf.butler.registry.collections.synthIntKey.SynthIntKeyCollectionManager
+    datasets: lsst.daf.butler.registry.datasets.byDimensions.ByDimensionsDatasetRecordStorageManagerUUID
+    datastores: lsst.daf.butler.registry.bridge.monolithic.MonolithicDatastoreRegistryBridgeManager
+    dimensions: lsst.daf.butler.registry.dimensions.static.StaticDimensionRecordStorageManager
+    opaque: lsst.daf.butler.registry.opaque.ByNameOpaqueTableStorageManager
+repo_transfer_formats:
+  yaml:
+    export: lsst.daf.butler.YamlRepoExportBackend
+    import: lsst.daf.butler.YamlRepoImportBackend
+storageClasses:
+  ApCorr:
+    pytype: lsst.afw.image.ApCorrMap
+  AstropyQTable:
+    pytype: astropy.table.QTable
+  AstropyTable:
+    pytype: astropy.table.Table
+  Background:
+    pytype: lsst.afw.math.BackgroundList
+  Box2I:
+    pytype: lsst.geom.Box2I
+  BrightStarStamps:
+    parameters:
+    - bbox
+    pytype: lsst.meas.algorithms.brightStarStamps.BrightStarStamps
+  BrighterFatterKernel:
+    pytype: lsst.ip.isr.BrighterFatterKernel
+  ButlerLogRecords:
+    pytype: lsst.daf.butler.ButlerLogRecords
+  Camera:
+    pytype: lsst.afw.cameraGeom.Camera
+  Catalog:
+    pytype: lsst.afw.table.BaseCatalog
+  CoaddInputs:
+    pytype: lsst.afw.image.CoaddInputs
+  Config:
+    pytype: lsst.pex.config.Config
+  CrosstalkCalib:
+    pytype: lsst.ip.isr.CrosstalkCalib
+  DataFrame:
+    derivedComponents:
+      columns: DataFrameIndex
+    parameters:
+    - columns
+    pytype: pandas.DataFrame
+  DataFrameIndex:
+    pytype: pandas.Index
+  DecoratedImage:
+    pytype: lsst.afw.image.DecoratedImage
+  DecoratedImageU:
+    inheritsFrom: DecoratedImage
+    pytype: lsst.afw.image.DecoratedImageU
+  Defects:
+    pytype: lsst.ip.isr.Defects
+  Detector:
+    pytype: lsst.afw.cameraGeom.Detector
+  Exposure:
+    components:
+      apCorrMap: ApCorr
+      coaddInputs: CoaddInputs
+      detector: Detector
+      filterLabel: FilterLabel
+      id: int
+      image: Image
+      mask: Mask
+      metadata: PropertyList
+      photoCalib: PhotoCalib
+      psf: Psf
+      summaryStats: ExposureSummaryStats
+      transmissionCurve: TransmissionCurve
+      validPolygon: Polygon
+      variance: Image
+      visitInfo: VisitInfo
+      wcs: Wcs
+    delegate: lsst.obs.base.exposureAssembler.ExposureAssembler
+    derivedComponents:
+      bbox: Box2I
+      dimensions: Extent2I
+      filter: Filter
+      xy0: Point2I
+    parameters:
+    - bbox
+    - origin
+    - amp
+    - detector
+    pytype: lsst.afw.image.Exposure
+  ExposureCatalog:
+    pytype: lsst.afw.table.ExposureCatalog
+  ExposureF:
+    components:
+      image: ImageF
+      mask: MaskX
+      variance: ImageF
+    inheritsFrom: Exposure
+    pytype: lsst.afw.image.ExposureF
+  ExposureI:
+    components:
+      image: ImageI
+      mask: MaskX
+      variance: ImageF
+    inheritsFrom: Exposure
+    pytype: lsst.afw.image.ExposureI
+  ExposureSummaryStats:
+    pytype: lsst.afw.image.ExposureSummaryStats
+  ExposureU:
+    components:
+      image: ImageU
+      mask: MaskX
+      variance: ImageF
+    inheritsFrom: Exposure
+    pytype: lsst.afw.image.ExposureU
+  ExtendedPsf:
+    pytype: lsst.pipe.tasks.extended_psf.ExtendedPsf
+  Extent2I:
+    pytype: lsst.geom.Extent2I
+  Filter:
+    pytype: lsst.afw.image.Filter
+  FilterLabel:
+    delegate: lsst.obs.base.formatters.filter.FilterTranslator
+    pytype: lsst.afw.image.FilterLabel
+  FocalPlaneBackground:
+    pytype: lsst.pipe.drivers.background.FocalPlaneBackground
+  HealSparseCoverage:
+    pytype: healsparse.HealSparseCoverage
+  HealSparseMap:
+    derivedComponents:
+      coverage: HealSparseCoverage
+    parameters:
+    - pixels
+    - degrade_nside
+    pytype: healsparse.HealSparseMap
+  Image:
+    delegate: lsst.obs.base.exposureAssembler.ExposureAssembler
+    parameters:
+    - bbox
+    - origin
+    pytype: lsst.afw.image.Image
+  ImageF:
+    inheritsFrom: Image
+    pytype: lsst.afw.image.ImageF
+  ImageI:
+    inheritsFrom: Image
+    pytype: lsst.afw.image.ImageI
+  ImageU:
+    inheritsFrom: Image
+    pytype: lsst.afw.image.ImageU
+  IsrCalib:
+    pytype: lsst.ip.isr.IsrCalib
+  Linearizer:
+    pytype: lsst.ip.isr.Linearizer
+  Mask:
+    delegate: lsst.obs.base.exposureAssembler.ExposureAssembler
+    parameters:
+    - bbox
+    - origin
+    pytype: lsst.afw.image.Mask
+  MaskX:
+    inheritsFrom: Mask
+    pytype: lsst.afw.image.MaskX
+  MaskedImage:
+    pytype: lsst.afw.image.MaskedImage
+  MaskedImageF:
+    inheritsFrom: MaskedImage
+    pytype: lsst.afw.image.MaskedImageF
+  MaskedImageI:
+    inheritsFrom: MaskedImage
+    pytype: lsst.afw.image.MaskedImageI
+  MaskedImageU:
+    inheritsFrom: MaskedImage
+    pytype: lsst.afw.image.MaskedImageU
+  MetricValue:
+    pytype: lsst.verify.Measurement
+  NumpyArray:
+    pytype: numpy.ndarray
+  ObjectMaskCatalog:
+    pytype: lsst.pipe.tasks.objectMasks.ObjectMaskCatalog
+  Packages:
+    converters:
+      dict: lsst.utils.packages.Packages
+    pytype: lsst.utils.packages.Packages
+  PeakCatalog:
+    pytype: lsst.afw.detection.PeakCatalog
+  PhotoCalib:
+    pytype: lsst.afw.image.PhotoCalib
+  PhotonTransferCurveDataset:
+    pytype: lsst.ip.isr.PhotonTransferCurveDataset
+  Plot:
+    pytype: matplotlib.figure.Figure
+  Point2I:
+    pytype: lsst.geom.Point2I
+  Polygon:
+    pytype: lsst.afw.geom.Polygon
+  PropertyList:
+    pytype: lsst.daf.base.PropertyList
+  PropertySet:
+    converters:
+      lsst.pipe.base.TaskMetadata: lsst.daf.base.PropertySet.from_mapping
+    pytype: lsst.daf.base.PropertySet
+  Psf:
+    pytype: lsst.afw.detection.Psf
+  QECurve:
+    pytype: lsst.meas.algorithms.Curve
+  SimpleCatalog:
+    pytype: lsst.afw.table.SimpleCatalog
+  SkyMap:
+    pytype: lsst.skymap.BaseSkyMap
+  SourceCatalog:
+    pytype: lsst.afw.table.SourceCatalog
+  Spectraction:
+    pytype: lsst.atmospec.spectraction.Spectraction
+  SpectractorImage:
+    pytype: spectractor.extractor.images.Image
+  SpectractorSpectrum:
+    pytype: spectractor.extractor.spectrum.Spectrum
+  Stamps:
+    parameters:
+    - bbox
+    pytype: lsst.meas.algorithms.Stamps
+  StampsBase:
+    parameters:
+    - bbox
+    pytype: lsst.meas.algorithms.stamps.StampsBase
+  StrayLightData:
+    pytype: lsst.ip.isr.StrayLightData
+  StructuredDataDict:
+    converters:
+      lsst.pipe.base.TaskMetadata: lsst.pipe.base.TaskMetadata.to_dict
+    pytype: dict
+  StructuredDataList:
+    pytype: list
+  TablePersistable:
+    pytype: lsst.afw.table.io.Persistable
+  TaskMetadata:
+    converters:
+      lsst.daf.base.PropertySet: lsst.pipe.base.TaskMetadata.from_metadata
+    pytype: lsst.pipe.base.TaskMetadata
+  Thumbnail:
+    pytype: numpy.ndarray
+  TransmissionCurve:
+    pytype: lsst.afw.image.TransmissionCurve
+  VisitInfo:
+    pytype: lsst.afw.image.VisitInfo
+  Wcs:
+    pytype: lsst.afw.geom.skyWcs.SkyWcs
+  int:
+    pytype: int
