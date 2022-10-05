@@ -1,1 +1,2 @@
-setupRequired(obs_test)
+setupRequired(obs_lsst)
+# TODO: add the PSF package used in our templates, once we have them
