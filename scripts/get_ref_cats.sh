@@ -1,9 +1,10 @@
 #!/usr/bin/bash
 # Identify refcats to use for this dataset, copy them into place, and
-ingest them into the butler.
+# ingest them into the butler.
 
 # identify refcats that overlap our detectors
-butler query-datasets /repo/dc2 --where "(instrument='LSSTCam-imSim' and visit=982985 and detector=164) or (instrument='LSSTCam-imSim' and visit=943296 and detector=168)" cal_ref_cat_2_2
+butler query-datasets /repo/dc2 --where "(instrument='LSSTCam-imSim' and visit=982985 and detector=164) \
+    or (instrument='LSSTCam-imSim' and visit=943296 and detector=168)" cal_ref_cat_2_2
 
 # NOTE: the below lines were created manually using the refcat shard ids printed from the above command.
 
