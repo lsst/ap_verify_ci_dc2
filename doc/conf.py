@@ -1,12 +1,12 @@
 """Sphinx configuration file for an LSST stack package.
-
 This configuration only affects single-package Sphinx documenation builds.
 """
 
-from documenteer.sphinxconfig.stackconf import build_package_configs
+from documenteer.conf.pipelinespkg import *  # noqa F403, import *
 
 
-_g = globals()
-_g.update(build_package_configs(
-    project_name='ap_verify_dataset_template',))
-
+project = "ap_verify_ci_dc2"
+html_theme_options["logotext"] = project  # noqa F405, unknown name
+html_title = project
+html_short_title = project
+doxylink = {}

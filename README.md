@@ -1,28 +1,31 @@
 ap_verify_ci_dc2
 ================
 
-Template repo for developing datasets for use with ap_verify.
+Simulated LSST data from `/repo/dc2`, for testing alert production in the LSST Science Pipelines.
 
-This repo is designed to be used as a template for developing new datasets for integration into [`ap_verify`](https://github.com/lsst-dm/ap_verify/).
+This and other ap_verify "datasets" are based on  [ap_verify_dataset_template](https://github.com/lsst-dm/ap_verify_dataset_template).
 
-Datasets must link to the corresponding instrument's obs package; this template is currently set up for using [`obs_test`](https://github.com/lsst/obs_test/) as a placeholder.
+Contains two overlapping exposures of `LSSTCam-imSim` from DC2 `tract=4431`, with `patches=(9,10,16,17)`:
+
+* visit=982985, detector=164
+* visit=943296, detector=168
 
 Relevant Files and Directories
 ------------------------------
 path                  | description
 :---------------------|:-----------------------------
 `doc`                 | Contains Sphinx package documentation for the dataset. This documentation may be linked to from other packages, such as `ap_verify`.
-`raw`                 | To be populated with raw data. Data files do not need to follow a specific subdirectory structure. Currently contains a single small fits file (taken from `obs_test`) to test `git-lfs` functionality.
-`config`              | To be populated with dataset-specific configs. Currently empty.
+`etc`                 | Files necessary for reconstructing the repo (e.g. refcat yaml ingest files).
+`raw`                 | Raw ImSim exposures.
+`config`              | Dataset-specific configs to help the Science Pipelines work with this dataset, including the butler `export.yaml` file used by `ap_verify.py`
 `pipelines`           | To be populated with dataset-specific pipelines. Currently contains three example files specialized for ImSim data.
-`preloaded`           | To be populated with a Gen 3 Butler repository (see below). This repository must never be written to; instead, it should be copied to a separate location before use (this is handled automatically by `ap_verify`, see below).
-`dataIds.list`        | List of dataIds in this repo. For use in running Tasks. Currently set to run all Ids.
+`preloaded`           | Starter Butler repo containing a skymap, calibs, coadds to use as difference imaging templates, and ImSim refcats covering the relevant sky region.
+`scripts`             | Scripts for regenerating this dataset.
 
+Butler Collections
+------------------
 
-Gen 3 Collections
------------------
-
-The Gen 3 repository in `preloaded/` must contain the following collections; these may be chained collections containing arbitrarily-named runs.
+The butler repository in `preloaded/` contains the following collections; these may be chained collections containing arbitrarily-named runs.
 
 collection              | description
 :-----------------------|:-----------------------------
@@ -42,12 +45,12 @@ Our [Developer Guide](http://developer.lsst.io/en/latest/tools/git_lfs.html) exp
 Usage
 -----
 
-Datasets are designed to be run using [`ap_verify`](https://pipelines.lsst.io/modules/lsst.ap.verify/), which is distributed as part of the `lsst_distrib` package of the [LSST Science Pipelines](https://pipelines.lsst.io/).
+`ap_verify_ci_dc2` is designed to be run using [`ap_verify`](https://pipelines.lsst.io/modules/lsst.ap.verify/), which is distributed as part of the `lsst_distrib` package of the [LSST Science Pipelines](https://pipelines.lsst.io/).
 
 This dataset is not included in `lsst_distrib` and is not available through `newinstall.sh`.
 However, it can be installed explicitly with the [LSST Software Build Tool](https://developer.lsst.io/stack/lsstsw.html) or by cloning directly:
 
-    git clone https://github.com/lsst/<dataset>/
-    setup -r <dataset>
+    git clone https://github.com/lsst/ap_verify_ci_dc2/
+    setup -r ap_verify_ci_dc2
 
 See the Science Pipelines documentation for more detailed instructions on [installing datasets](https://pipelines.lsst.io/modules/lsst.ap.verify/datasets-install.html) and [running `ap_verify`](https://pipelines.lsst.io/modules/lsst.ap.verify/running.html).
