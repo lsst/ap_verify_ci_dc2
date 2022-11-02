@@ -1,0 +1,3 @@
+setupRequired(obs_lsst)
+# The coadds used for templates were made with psfex PSFs.
+setupRequired(meas_extensions_psfex)
