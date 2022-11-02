@@ -1,0 +1,3007 @@
+description: Butler Data Repository Export
+version: 1.0.2
+universe_version: 2
+universe_namespace: daf_butler
+data:
+- type: dimension
+  element: instrument
+  records:
+  - name: LSSTCam-imSim
+    visit_max: 9999999
+    visit_system: 0
+    exposure_max: 9999999
+    detector_max: 1000
+    class_name: lsst.obs.lsst.LsstCamImSim
+- type: dimension
+  element: skymap
+  records:
+  - name: DC2
+    hash: !!binary |
+      Hl+oX+JCYGQmUo9fe42/Acuq/54=
+    tract_max: 18938
+    patch_nx_max: 7
+    patch_ny_max: 7
+- type: dimension
+  element: detector
+  records:
+  - instrument: LSSTCam-imSim
+    id: 0
+    full_name: R01_S00
+    name_in_raft: S00
+    raft: R01
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 1
+    full_name: R01_S01
+    name_in_raft: S01
+    raft: R01
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 2
+    full_name: R01_S02
+    name_in_raft: S02
+    raft: R01
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 3
+    full_name: R01_S10
+    name_in_raft: S10
+    raft: R01
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 4
+    full_name: R01_S11
+    name_in_raft: S11
+    raft: R01
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 5
+    full_name: R01_S12
+    name_in_raft: S12
+    raft: R01
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 6
+    full_name: R01_S20
+    name_in_raft: S20
+    raft: R01
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 7
+    full_name: R01_S21
+    name_in_raft: S21
+    raft: R01
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 8
+    full_name: R01_S22
+    name_in_raft: S22
+    raft: R01
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 9
+    full_name: R02_S00
+    name_in_raft: S00
+    raft: R02
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 10
+    full_name: R02_S01
+    name_in_raft: S01
+    raft: R02
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 11
+    full_name: R02_S02
+    name_in_raft: S02
+    raft: R02
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 12
+    full_name: R02_S10
+    name_in_raft: S10
+    raft: R02
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 13
+    full_name: R02_S11
+    name_in_raft: S11
+    raft: R02
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 14
+    full_name: R02_S12
+    name_in_raft: S12
+    raft: R02
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 15
+    full_name: R02_S20
+    name_in_raft: S20
+    raft: R02
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 16
+    full_name: R02_S21
+    name_in_raft: S21
+    raft: R02
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 17
+    full_name: R02_S22
+    name_in_raft: S22
+    raft: R02
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 18
+    full_name: R03_S00
+    name_in_raft: S00
+    raft: R03
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 19
+    full_name: R03_S01
+    name_in_raft: S01
+    raft: R03
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 20
+    full_name: R03_S02
+    name_in_raft: S02
+    raft: R03
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 21
+    full_name: R03_S10
+    name_in_raft: S10
+    raft: R03
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 22
+    full_name: R03_S11
+    name_in_raft: S11
+    raft: R03
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 23
+    full_name: R03_S12
+    name_in_raft: S12
+    raft: R03
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 24
+    full_name: R03_S20
+    name_in_raft: S20
+    raft: R03
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 25
+    full_name: R03_S21
+    name_in_raft: S21
+    raft: R03
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 26
+    full_name: R03_S22
+    name_in_raft: S22
+    raft: R03
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 27
+    full_name: R10_S00
+    name_in_raft: S00
+    raft: R10
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 28
+    full_name: R10_S01
+    name_in_raft: S01
+    raft: R10
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 29
+    full_name: R10_S02
+    name_in_raft: S02
+    raft: R10
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 30
+    full_name: R10_S10
+    name_in_raft: S10
+    raft: R10
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 31
+    full_name: R10_S11
+    name_in_raft: S11
+    raft: R10
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 32
+    full_name: R10_S12
+    name_in_raft: S12
+    raft: R10
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 33
+    full_name: R10_S20
+    name_in_raft: S20
+    raft: R10
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 34
+    full_name: R10_S21
+    name_in_raft: S21
+    raft: R10
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 35
+    full_name: R10_S22
+    name_in_raft: S22
+    raft: R10
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 36
+    full_name: R11_S00
+    name_in_raft: S00
+    raft: R11
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 37
+    full_name: R11_S01
+    name_in_raft: S01
+    raft: R11
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 38
+    full_name: R11_S02
+    name_in_raft: S02
+    raft: R11
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 39
+    full_name: R11_S10
+    name_in_raft: S10
+    raft: R11
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 40
+    full_name: R11_S11
+    name_in_raft: S11
+    raft: R11
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 41
+    full_name: R11_S12
+    name_in_raft: S12
+    raft: R11
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 42
+    full_name: R11_S20
+    name_in_raft: S20
+    raft: R11
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 43
+    full_name: R11_S21
+    name_in_raft: S21
+    raft: R11
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 44
+    full_name: R11_S22
+    name_in_raft: S22
+    raft: R11
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 45
+    full_name: R12_S00
+    name_in_raft: S00
+    raft: R12
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 46
+    full_name: R12_S01
+    name_in_raft: S01
+    raft: R12
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 47
+    full_name: R12_S02
+    name_in_raft: S02
+    raft: R12
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 48
+    full_name: R12_S10
+    name_in_raft: S10
+    raft: R12
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 49
+    full_name: R12_S11
+    name_in_raft: S11
+    raft: R12
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 50
+    full_name: R12_S12
+    name_in_raft: S12
+    raft: R12
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 51
+    full_name: R12_S20
+    name_in_raft: S20
+    raft: R12
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 52
+    full_name: R12_S21
+    name_in_raft: S21
+    raft: R12
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 53
+    full_name: R12_S22
+    name_in_raft: S22
+    raft: R12
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 54
+    full_name: R13_S00
+    name_in_raft: S00
+    raft: R13
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 55
+    full_name: R13_S01
+    name_in_raft: S01
+    raft: R13
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 56
+    full_name: R13_S02
+    name_in_raft: S02
+    raft: R13
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 57
+    full_name: R13_S10
+    name_in_raft: S10
+    raft: R13
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 58
+    full_name: R13_S11
+    name_in_raft: S11
+    raft: R13
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 59
+    full_name: R13_S12
+    name_in_raft: S12
+    raft: R13
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 60
+    full_name: R13_S20
+    name_in_raft: S20
+    raft: R13
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 61
+    full_name: R13_S21
+    name_in_raft: S21
+    raft: R13
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 62
+    full_name: R13_S22
+    name_in_raft: S22
+    raft: R13
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 63
+    full_name: R14_S00
+    name_in_raft: S00
+    raft: R14
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 64
+    full_name: R14_S01
+    name_in_raft: S01
+    raft: R14
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 65
+    full_name: R14_S02
+    name_in_raft: S02
+    raft: R14
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 66
+    full_name: R14_S10
+    name_in_raft: S10
+    raft: R14
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 67
+    full_name: R14_S11
+    name_in_raft: S11
+    raft: R14
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 68
+    full_name: R14_S12
+    name_in_raft: S12
+    raft: R14
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 69
+    full_name: R14_S20
+    name_in_raft: S20
+    raft: R14
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 70
+    full_name: R14_S21
+    name_in_raft: S21
+    raft: R14
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 71
+    full_name: R14_S22
+    name_in_raft: S22
+    raft: R14
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 72
+    full_name: R20_S00
+    name_in_raft: S00
+    raft: R20
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 73
+    full_name: R20_S01
+    name_in_raft: S01
+    raft: R20
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 74
+    full_name: R20_S02
+    name_in_raft: S02
+    raft: R20
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 75
+    full_name: R20_S10
+    name_in_raft: S10
+    raft: R20
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 76
+    full_name: R20_S11
+    name_in_raft: S11
+    raft: R20
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 77
+    full_name: R20_S12
+    name_in_raft: S12
+    raft: R20
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 78
+    full_name: R20_S20
+    name_in_raft: S20
+    raft: R20
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 79
+    full_name: R20_S21
+    name_in_raft: S21
+    raft: R20
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 80
+    full_name: R20_S22
+    name_in_raft: S22
+    raft: R20
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 81
+    full_name: R21_S00
+    name_in_raft: S00
+    raft: R21
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 82
+    full_name: R21_S01
+    name_in_raft: S01
+    raft: R21
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 83
+    full_name: R21_S02
+    name_in_raft: S02
+    raft: R21
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 84
+    full_name: R21_S10
+    name_in_raft: S10
+    raft: R21
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 85
+    full_name: R21_S11
+    name_in_raft: S11
+    raft: R21
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 86
+    full_name: R21_S12
+    name_in_raft: S12
+    raft: R21
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 87
+    full_name: R21_S20
+    name_in_raft: S20
+    raft: R21
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 88
+    full_name: R21_S21
+    name_in_raft: S21
+    raft: R21
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 89
+    full_name: R21_S22
+    name_in_raft: S22
+    raft: R21
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 90
+    full_name: R22_S00
+    name_in_raft: S00
+    raft: R22
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 91
+    full_name: R22_S01
+    name_in_raft: S01
+    raft: R22
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 92
+    full_name: R22_S02
+    name_in_raft: S02
+    raft: R22
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 93
+    full_name: R22_S10
+    name_in_raft: S10
+    raft: R22
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 94
+    full_name: R22_S11
+    name_in_raft: S11
+    raft: R22
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 95
+    full_name: R22_S12
+    name_in_raft: S12
+    raft: R22
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 96
+    full_name: R22_S20
+    name_in_raft: S20
+    raft: R22
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 97
+    full_name: R22_S21
+    name_in_raft: S21
+    raft: R22
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 98
+    full_name: R22_S22
+    name_in_raft: S22
+    raft: R22
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 99
+    full_name: R23_S00
+    name_in_raft: S00
+    raft: R23
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 100
+    full_name: R23_S01
+    name_in_raft: S01
+    raft: R23
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 101
+    full_name: R23_S02
+    name_in_raft: S02
+    raft: R23
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 102
+    full_name: R23_S10
+    name_in_raft: S10
+    raft: R23
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 103
+    full_name: R23_S11
+    name_in_raft: S11
+    raft: R23
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 104
+    full_name: R23_S12
+    name_in_raft: S12
+    raft: R23
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 105
+    full_name: R23_S20
+    name_in_raft: S20
+    raft: R23
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 106
+    full_name: R23_S21
+    name_in_raft: S21
+    raft: R23
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 107
+    full_name: R23_S22
+    name_in_raft: S22
+    raft: R23
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 108
+    full_name: R24_S00
+    name_in_raft: S00
+    raft: R24
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 109
+    full_name: R24_S01
+    name_in_raft: S01
+    raft: R24
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 110
+    full_name: R24_S02
+    name_in_raft: S02
+    raft: R24
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 111
+    full_name: R24_S10
+    name_in_raft: S10
+    raft: R24
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 112
+    full_name: R24_S11
+    name_in_raft: S11
+    raft: R24
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 113
+    full_name: R24_S12
+    name_in_raft: S12
+    raft: R24
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 114
+    full_name: R24_S20
+    name_in_raft: S20
+    raft: R24
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 115
+    full_name: R24_S21
+    name_in_raft: S21
+    raft: R24
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 116
+    full_name: R24_S22
+    name_in_raft: S22
+    raft: R24
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 117
+    full_name: R30_S00
+    name_in_raft: S00
+    raft: R30
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 118
+    full_name: R30_S01
+    name_in_raft: S01
+    raft: R30
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 119
+    full_name: R30_S02
+    name_in_raft: S02
+    raft: R30
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 120
+    full_name: R30_S10
+    name_in_raft: S10
+    raft: R30
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 121
+    full_name: R30_S11
+    name_in_raft: S11
+    raft: R30
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 122
+    full_name: R30_S12
+    name_in_raft: S12
+    raft: R30
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 123
+    full_name: R30_S20
+    name_in_raft: S20
+    raft: R30
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 124
+    full_name: R30_S21
+    name_in_raft: S21
+    raft: R30
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 125
+    full_name: R30_S22
+    name_in_raft: S22
+    raft: R30
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 126
+    full_name: R31_S00
+    name_in_raft: S00
+    raft: R31
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 127
+    full_name: R31_S01
+    name_in_raft: S01
+    raft: R31
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 128
+    full_name: R31_S02
+    name_in_raft: S02
+    raft: R31
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 129
+    full_name: R31_S10
+    name_in_raft: S10
+    raft: R31
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 130
+    full_name: R31_S11
+    name_in_raft: S11
+    raft: R31
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 131
+    full_name: R31_S12
+    name_in_raft: S12
+    raft: R31
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 132
+    full_name: R31_S20
+    name_in_raft: S20
+    raft: R31
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 133
+    full_name: R31_S21
+    name_in_raft: S21
+    raft: R31
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 134
+    full_name: R31_S22
+    name_in_raft: S22
+    raft: R31
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 135
+    full_name: R32_S00
+    name_in_raft: S00
+    raft: R32
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 136
+    full_name: R32_S01
+    name_in_raft: S01
+    raft: R32
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 137
+    full_name: R32_S02
+    name_in_raft: S02
+    raft: R32
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 138
+    full_name: R32_S10
+    name_in_raft: S10
+    raft: R32
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 139
+    full_name: R32_S11
+    name_in_raft: S11
+    raft: R32
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 140
+    full_name: R32_S12
+    name_in_raft: S12
+    raft: R32
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 141
+    full_name: R32_S20
+    name_in_raft: S20
+    raft: R32
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 142
+    full_name: R32_S21
+    name_in_raft: S21
+    raft: R32
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 143
+    full_name: R32_S22
+    name_in_raft: S22
+    raft: R32
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 144
+    full_name: R33_S00
+    name_in_raft: S00
+    raft: R33
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 145
+    full_name: R33_S01
+    name_in_raft: S01
+    raft: R33
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 146
+    full_name: R33_S02
+    name_in_raft: S02
+    raft: R33
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 147
+    full_name: R33_S10
+    name_in_raft: S10
+    raft: R33
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 148
+    full_name: R33_S11
+    name_in_raft: S11
+    raft: R33
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 149
+    full_name: R33_S12
+    name_in_raft: S12
+    raft: R33
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 150
+    full_name: R33_S20
+    name_in_raft: S20
+    raft: R33
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 151
+    full_name: R33_S21
+    name_in_raft: S21
+    raft: R33
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 152
+    full_name: R33_S22
+    name_in_raft: S22
+    raft: R33
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 153
+    full_name: R34_S00
+    name_in_raft: S00
+    raft: R34
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 154
+    full_name: R34_S01
+    name_in_raft: S01
+    raft: R34
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 155
+    full_name: R34_S02
+    name_in_raft: S02
+    raft: R34
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 156
+    full_name: R34_S10
+    name_in_raft: S10
+    raft: R34
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 157
+    full_name: R34_S11
+    name_in_raft: S11
+    raft: R34
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 158
+    full_name: R34_S12
+    name_in_raft: S12
+    raft: R34
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 159
+    full_name: R34_S20
+    name_in_raft: S20
+    raft: R34
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 160
+    full_name: R34_S21
+    name_in_raft: S21
+    raft: R34
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 161
+    full_name: R34_S22
+    name_in_raft: S22
+    raft: R34
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 162
+    full_name: R41_S00
+    name_in_raft: S00
+    raft: R41
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 163
+    full_name: R41_S01
+    name_in_raft: S01
+    raft: R41
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 164
+    full_name: R41_S02
+    name_in_raft: S02
+    raft: R41
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 165
+    full_name: R41_S10
+    name_in_raft: S10
+    raft: R41
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 166
+    full_name: R41_S11
+    name_in_raft: S11
+    raft: R41
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 167
+    full_name: R41_S12
+    name_in_raft: S12
+    raft: R41
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 168
+    full_name: R41_S20
+    name_in_raft: S20
+    raft: R41
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 169
+    full_name: R41_S21
+    name_in_raft: S21
+    raft: R41
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 170
+    full_name: R41_S22
+    name_in_raft: S22
+    raft: R41
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 171
+    full_name: R42_S00
+    name_in_raft: S00
+    raft: R42
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 172
+    full_name: R42_S01
+    name_in_raft: S01
+    raft: R42
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 173
+    full_name: R42_S02
+    name_in_raft: S02
+    raft: R42
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 174
+    full_name: R42_S10
+    name_in_raft: S10
+    raft: R42
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 175
+    full_name: R42_S11
+    name_in_raft: S11
+    raft: R42
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 176
+    full_name: R42_S12
+    name_in_raft: S12
+    raft: R42
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 177
+    full_name: R42_S20
+    name_in_raft: S20
+    raft: R42
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 178
+    full_name: R42_S21
+    name_in_raft: S21
+    raft: R42
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 179
+    full_name: R42_S22
+    name_in_raft: S22
+    raft: R42
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 180
+    full_name: R43_S00
+    name_in_raft: S00
+    raft: R43
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 181
+    full_name: R43_S01
+    name_in_raft: S01
+    raft: R43
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 182
+    full_name: R43_S02
+    name_in_raft: S02
+    raft: R43
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 183
+    full_name: R43_S10
+    name_in_raft: S10
+    raft: R43
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 184
+    full_name: R43_S11
+    name_in_raft: S11
+    raft: R43
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 185
+    full_name: R43_S12
+    name_in_raft: S12
+    raft: R43
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 186
+    full_name: R43_S20
+    name_in_raft: S20
+    raft: R43
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 187
+    full_name: R43_S21
+    name_in_raft: S21
+    raft: R43
+    purpose: SCIENCE
+  - instrument: LSSTCam-imSim
+    id: 188
+    full_name: R43_S22
+    name_in_raft: S22
+    raft: R43
+    purpose: SCIENCE
+- type: dimension
+  element: physical_filter
+  records:
+  - instrument: LSSTCam-imSim
+    name: r_sim_1.4
+    band: r
+- type: dimension
+  element: tract
+  records:
+  - skymap: DC2
+    id: 4431
+    region: !<lsst.sphgeom.ConvexPolygon>
+      encoded: 7061ed0dd08f14df3fabfbe23d6ef8e53f033356189950e1bf5bd51b0660a5dd3fc7f5d1f1e475e63f38b0281c9950e1bf0fd449e6482ade3f4fcbfd9423d7e63f49f14b2cfc93e0bfd686cdaf7899df3fe60b15e1ac59e63fe916a328fc93e0bf
+- type: dimension
+  element: patch
+  records:
+  - skymap: DC2
+    tract: 4431
+    id: 9
+    cell_x: 2
+    cell_y: 1
+    region: !<lsst.sphgeom.ConvexPolygon>
+      encoded: 705a8d2b299c57de3fe898ae45fd4de63f0ff9e688eb36e1bf23efdb1c6720de3fd66a7f90b860e63f597641b8d936e1bf0f1513fa9534de3f1ba46aa57d6fe63f26e07586b11ae1bfa7c5ce8dcb6bde3fd2964c43c25ce63f67ea403ac31ae1bf
+  - skymap: DC2
+    tract: 4431
+    id: 10
+    cell_x: 3
+    cell_y: 1
+    region: !<lsst.sphgeom.ConvexPolygon>
+      encoded: 7063c6bac1118cde3f1c5e74b80f3ce63fe19dc11beb36e1bf4b0d59e5fb54de3f433e312ce24ee63f3394531ceb36e1bfd1c90b442b69de3f3cc54a2ba75de63f425f5dcec21ae1bf4d43749241a0de3fc6019790d44ae63f5655cccdc21ae1bf
+  - skymap: DC2
+    tract: 4431
+    id: 16
+    cell_x: 2
+    cell_y: 2
+    region: !<lsst.sphgeom.ConvexPolygon>
+      encoded: 7075a7d33ad66ade3f89d6e5c20e5ce63f7b6589e91a1ce1bfac0b2daca033de3fa7dd5c24ca6ee63f55475d34091ce1bfc62e0082b047de3fa85f8d2c787de63f6df177faceffe0bf54deae5ee67ede3f7fb9fcc6bc6ae63f7a9b9192e0ffe0bf
+  - skymap: DC2
+    tract: 4431
+    id: 17
+    cell_x: 3
+    cell_y: 2
+    region: !<lsst.sphgeom.ConvexPolygon>
+      encoded: 70ec669e3b4c9fde3f970e8811214ae63f3a5d0c7d1a1ce1bfee7848f13568de3f548fd7aaf35ce63f73729d7d1a1ce1bf3d8bec11467cde3f1d327eafa16be63f59d75627e0ffe0bf2f9845955cb3de3f41fbb202cf58e63f52b0c626e0ffe0bf
+- type: collection
+  collection_type: CALIBRATION
+  name: 2.2i/calib/gen2
+- type: collection
+  collection_type: RUN
+  name: 2.2i/calib/gen2/20220101T000000Z
+  host: null
+  timespan_begin: null
+  timespan_end: null
+- type: collection
+  collection_type: RUN
+  name: 2.2i/calib/gen2/20220806T000000Z
+  host: null
+  timespan_begin: null
+  timespan_end: null
+- type: collection
+  collection_type: CALIBRATION
+  name: LSSTCam-imSim/calib/curated
+- type: collection
+  collection_type: RUN
+  name: LSSTCam-imSim/calib/curated/19700101T000000Z
+  host: null
+  timespan_begin: null
+  timespan_end: null
+- type: collection
+  collection_type: RUN
+  name: LSSTCam-imSim/calib/unbounded
+  host: null
+  timespan_begin: null
+  timespan_end: null
+- type: collection
+  collection_type: RUN
+  name: refcats/cal_ref_cat_2_2
+  host: null
+  timespan_begin: null
+  timespan_end: null
+- type: collection
+  collection_type: RUN
+  name: skymaps
+  host: null
+  timespan_begin: null
+  timespan_end: null
+- type: collection
+  collection_type: RUN
+  name: templates/goodSeeing
+  host: null
+  timespan_begin: null
+  timespan_end: null
+- type: collection
+  collection_type: CHAINED
+  name: LSSTCam-imSim/calib
+  children:
+  - 2.2i/calib/gen2
+  - LSSTCam-imSim/calib/curated
+- type: collection
+  collection_type: CHAINED
+  name: refcats
+  children:
+  - refcats/cal_ref_cat_2_2
+- type: collection
+  collection_type: CHAINED
+  name: LSSTCam-imSim/defaults
+  children:
+  - templates/goodSeeing
+  - skymaps
+  - LSSTCam-imSim/calib
+  - refcats
+- type: dataset_type
+  name: bfk
+  dimensions:
+  - instrument
+  - detector
+  storage_class: BrighterFatterKernel
+  is_calibration: true
+- type: dataset
+  dataset_type: bfk
+  run: LSSTCam-imSim/calib/curated/19700101T000000Z
+  records:
+  - dataset_id:
+    - !uuid '76f23ae8-0fe6-4586-9b65-6442fbd0c5c0'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 0
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R01_S00_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'aa46516b-9f23-4dbc-bee5-4b8bbeb07a9e'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 1
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R01_S01_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '4c561798-8de3-4f07-bffc-c0dff51fa609'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 2
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R01_S02_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'f6937f74-0b65-4b22-b858-7a04a5b9c247'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 3
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R01_S10_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '941d9ab6-3573-436d-9c43-4d430612003b'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 4
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R01_S11_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '41221f30-48dd-443e-96a0-32847cb74621'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 5
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R01_S12_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'efbc84ec-9b4f-4d35-833d-5c9051f68bae'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 6
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R01_S20_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '9d2ac504-6ce8-4ec5-a140-4b1eb40fa201'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 7
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R01_S21_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'ece849c1-7bc7-47a4-adf1-e2f8d8e27364'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 8
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R01_S22_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'cdf25055-9927-48dc-ad82-c56c9bf876c2'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 9
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R02_S00_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '21fbba27-0c57-45e3-b11a-47f6c6cff1cf'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 10
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R02_S01_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '39186af0-cb9a-4da6-8a2b-e08d3d102bc3'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 11
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R02_S02_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'ed66d669-0d5a-4a0a-90cf-64b61682d008'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 12
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R02_S10_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '3d1fbf56-c17a-4c4c-86b3-342aa05f2062'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 13
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R02_S11_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '2620f860-2748-4492-a9b2-ec6bb0667819'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 14
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R02_S12_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'c188a12b-4ed9-47c4-8d70-c809472db73d'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 15
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R02_S20_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '7b770b75-5287-4deb-b2b2-f06d97ddf1c0'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 16
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R02_S21_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '6422ee2a-2cbb-4092-882f-2d7c77cecaf4'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 17
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R02_S22_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '860b1b8e-3134-422b-8ec3-2c436a3b4b13'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 18
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R03_S00_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '9a3adcf9-47f1-418d-a7eb-aee5b636facf'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 19
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R03_S01_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '318ff34c-6e55-4a1c-9e86-5c019d7510b0'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 20
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R03_S02_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '21153af7-79f5-4ff7-a793-567c73eba914'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 21
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R03_S10_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '3a8f3485-f39d-4857-9ec0-856074da6c2f'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 22
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R03_S11_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '8b4cd719-66a5-426e-9737-2a0290a0972c'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 23
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R03_S12_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '5fb003ee-342a-4bc4-9a9c-26bb0a795358'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 24
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R03_S20_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'c41481c8-7fd0-4e72-879a-ce003b6e0cc6'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 25
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R03_S21_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '8f1cc87a-8dbf-4580-851e-a9a56891a668'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 26
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R03_S22_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '280a99f7-f278-4a20-b166-e38fb62bd335'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 27
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R10_S00_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '7444fd5b-0e64-4c2c-ad98-8ab6e0c21c29'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 28
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R10_S01_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '7c1e66ea-f1db-439b-a1d8-a689e9c5105a'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 29
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R10_S02_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'ccf75e66-538a-4f35-be42-79cbe5890dd3'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 30
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R10_S10_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'c690a6d2-dee3-4596-a726-34fcbc422abc'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 31
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R10_S11_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '8f2a1ee0-48b1-4501-9101-29c2bd26bfca'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 32
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R10_S12_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '58c37311-638e-4e3c-934a-5f246b67ad19'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 33
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R10_S20_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '1e1e043f-13d4-4abe-bc23-b530af23b496'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 34
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R10_S21_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '79a45bbd-96d6-4574-8e45-872420793a33'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 35
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R10_S22_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '5c79fa14-6c80-4f7b-8089-959e47ffdd8a'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 36
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R11_S00_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'ad774b6a-3ae3-468c-bd69-db908b99ea28'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 37
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R11_S01_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '4abae83e-699e-4c62-a2ca-47c25fd1a8ab'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 38
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R11_S02_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '4c06f9d8-8635-4208-b363-580758bceb54'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 39
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R11_S10_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '4cdae3b7-bbd8-4ac8-ae4f-4d1bf82ebbdd'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 40
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R11_S11_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '44240fef-7ff6-4bc6-a683-79893b4001a7'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 41
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R11_S12_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'ff04f3d8-67e6-49df-a9cd-ae7854bf680b'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 42
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R11_S20_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'bd6a1619-e32a-4f19-9f15-e7447d804053'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 43
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R11_S21_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'dd45a8b8-f3c1-4dbe-aee2-fe4faf49462e'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 44
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R11_S22_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '1619d6a4-53e2-4705-a4c2-4d9358d4dd8a'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 45
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R12_S00_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '361b2f1a-c424-408b-845c-895ed078e6f9'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 46
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R12_S01_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '8681e626-0ce6-4fea-963d-aa6ff6b88a6e'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 47
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R12_S02_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '0d686de2-32bc-4509-b555-a330d5823ccc'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 48
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R12_S10_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '1fa18dbd-2c54-4926-8d02-96afdb04b5fd'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 49
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R12_S11_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'f03231d0-fd14-4146-9c84-3a5b4473119e'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 50
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R12_S12_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '6cf8fb56-174e-4d54-951e-0dba77001f4a'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 51
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R12_S20_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'acde1acd-96e9-4d6b-a430-e6b15814d553'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 52
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R12_S21_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'd0681911-6d0f-4612-bca1-acbf2c00ccaa'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 53
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R12_S22_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'e0367810-d4a7-4a56-bbb5-9edb44deb2a2'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 54
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R13_S00_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'd6075a71-ae28-4161-b566-ade6dcf904fd'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 55
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R13_S01_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '834f2eb2-ddd5-4647-b1a4-e8c760dce6be'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 56
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R13_S02_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '040db7e1-d476-43fa-a85a-a1cf325c0f9e'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 57
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R13_S10_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'e46f418f-e9eb-4c59-8539-537fdd9320b1'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 58
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R13_S11_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '6bdfb3c7-55c9-4ea4-8497-593e86b0b1a8'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 59
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R13_S12_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '1febece7-6a4d-47e7-9cba-05a228fdf500'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 60
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R13_S20_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '01cda5d7-bf85-44de-bb74-8e5202240392'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 61
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R13_S21_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'e3a91cc2-2d04-4a9a-aae0-a39abd44f86f'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 62
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R13_S22_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '38564424-1205-4945-ae85-3cb4f0ff98ae'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 63
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R14_S00_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '0fffcbed-39de-466b-9538-41147505883e'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 64
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R14_S01_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '6f444b1e-075d-4c57-917f-26d436d5d8b0'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 65
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R14_S02_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'eec255d8-7e41-4784-8427-48eb070b008e'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 66
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R14_S10_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '9d042e71-c1ff-4559-b3ee-8879bc92eb37'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 67
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R14_S11_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '107bfdd6-686c-4b37-a71e-bbc2b1ffe4de'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 68
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R14_S12_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'b73e2124-99de-4d7b-8bdd-729e54eb8b7d'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 69
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R14_S20_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '87172aaa-b4ec-4717-9bca-708aeb6c55be'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 70
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R14_S21_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '3fc17a11-66d5-4496-9ae4-5fb0ffee5839'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 71
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R14_S22_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'aafd17c3-4da0-4ecf-af28-9c8e831af485'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 72
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R20_S00_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '490bbf6a-0e90-45de-8518-d37378eb3e85'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 73
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R20_S01_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '5915227b-b8de-4639-b1d2-dc32e78e44be'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 74
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R20_S02_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'a2d0d423-6ca7-4da9-89f5-2f038123aa53'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 75
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R20_S10_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'd953bde4-3a0d-4ce3-a516-d9c0f0766473'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 76
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R20_S11_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '17412eda-0d7b-41e3-9258-8516d3baf286'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 77
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R20_S12_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'b3bb0c3e-b964-4305-91e2-d159e3bf6963'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 78
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R20_S20_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'a3a38734-f002-499d-896d-8595a4042375'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 79
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R20_S21_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '3ba920f4-98df-4b19-897a-c1c3593d72fd'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 80
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R20_S22_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '8824e795-1cad-41ba-9822-1c1439fe6db0'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 81
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R21_S00_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '7e352c52-c3ae-4f8f-b5ff-659f46cde4c9'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 82
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R21_S01_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '78f47d55-ee2c-4330-9248-5385dfccaa94'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 83
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R21_S02_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '0e5c7f0b-67e2-4b19-9329-e59c26a6db50'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 84
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R21_S10_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '52290460-f56b-4990-b4a5-2bf093e4bce3'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 85
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R21_S11_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '3d70897b-9f79-4496-a066-300e8e1d58cf'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 86
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R21_S12_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'f0d0ee8e-ab8e-435c-8585-c7a46d80bf35'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 87
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R21_S20_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '9622f79b-685d-403f-9770-55f720c5d0a5'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 88
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R21_S21_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '4eff43b7-d9aa-4727-b2a7-6c1a541e55ef'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 89
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R21_S22_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'e1a737b2-cee7-4e08-bb33-43d83d7494eb'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 90
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R22_S00_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '50dea846-cedb-4c0a-8a4e-7041ae4847e0'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 91
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R22_S01_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '13a9b8ea-6e2b-4ba0-b4d3-56964ca9f037'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 92
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R22_S02_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '6d97229c-a98e-4c8d-b5df-0865f89a7299'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 93
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R22_S10_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'ce6d4d72-2881-4034-b08c-b5c3ac5fc01c'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 94
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R22_S11_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'f20e1da1-a282-4da1-91d3-4450e978beff'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 95
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R22_S12_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '24e754d1-d1b1-4bf0-99ac-0b6f58d1040c'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 96
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R22_S20_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '264e2c15-f087-40ef-835f-dfc7399e51ad'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 97
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R22_S21_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '2e8fb0c4-affb-4728-884d-74ad9a35d3d9'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 98
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R22_S22_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '8b971c00-e8ec-414f-a814-01ea444fab3f'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 99
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R23_S00_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'ca0c363a-1afb-4afb-bab6-c472ca433e51'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 100
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R23_S01_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '24ca7c75-95b4-48f4-8ad1-3ee6aa86256e'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 101
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R23_S02_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '7b310447-8173-4144-b0ad-d8fa67b99ce8'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 102
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R23_S10_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'd52bf089-853b-4a68-8b02-daa8e2bbf08d'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 103
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R23_S11_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'c0e284ce-2e9e-4e2f-9d0e-741020f49edf'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 104
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R23_S12_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '56de4dc7-ae40-4749-a247-1c8a79749962'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 105
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R23_S20_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'b4cf7260-fc2e-4dfd-af79-8e00bd87c029'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 106
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R23_S21_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'a1b4bf18-7076-447e-81b7-0e9ede43411f'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 107
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R23_S22_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'd059814b-af81-4921-bd32-fb3a013e8289'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 108
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R24_S00_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '7efddb3a-0df8-4115-9470-b2bf53244d81'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 109
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R24_S01_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '95e27fc5-f766-4ed8-b019-51d53e605288'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 110
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R24_S02_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '67b16874-2bea-442b-bc1d-d049800901d4'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 111
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R24_S10_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '9e0d8ca3-4461-48a6-b0d8-203b07e857b6'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 112
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R24_S11_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '29093a21-f56e-4a1d-ae6a-77d5c72c86c3'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 113
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R24_S12_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '88bff385-3b3f-4080-951e-a338e8cae405'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 114
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R24_S20_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'c0ec0d03-c1e6-4120-a08e-2eac58bc0375'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 115
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R24_S21_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '5b4937d9-3b27-4ca7-ad6c-2cc5996c188d'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 116
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R24_S22_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '83b7b50a-9986-4fc9-860c-8f5928ad485d'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 117
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R30_S00_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '1e5cf79a-baad-4190-8c2b-8c4a672c5080'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 118
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R30_S01_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'e42fd196-d49e-4cb1-a464-51a564174877'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 119
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R30_S02_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '73fc231f-59b6-4d0b-81d7-a34d2e8dde47'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 120
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R30_S10_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '365727d6-7a63-4e6d-a8ad-c1ac6d24b551'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 121
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R30_S11_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '3a6ecd65-29e5-4fce-885b-886756c9fc81'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 122
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R30_S12_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '0f3db270-3ade-4b72-ba7a-19b71a66c421'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 123
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R30_S20_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '59ddce08-4982-49c0-9237-56dfe1b7a6fb'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 124
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R30_S21_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'cb94df09-e271-4bdb-a24f-8251c6708235'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 125
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R30_S22_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '8edbc4cb-1167-4199-ab0b-ecaeef546163'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 126
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R31_S00_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'f4d1b7ed-7733-46b4-a98d-83ebe54f67d2'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 127
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R31_S01_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '67c9b55f-ebd4-4ac5-b7ca-be58466294a6'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 128
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R31_S02_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'a5a9180f-0fb1-4c0e-b46b-fdddeb301bba'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 129
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R31_S10_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'b71e4258-cfd5-443a-bc4f-eaa221e96620'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 130
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R31_S11_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'c8ff122a-c009-4693-b558-7dac9e156ba2'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 131
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R31_S12_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '8e7416ad-c930-4303-959a-2e41d5b78753'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 132
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R31_S20_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'cf69c945-0daa-42d6-b7d5-287ec7e1e348'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 133
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R31_S21_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'b7fdd2c9-1a9b-49a1-b89a-763e898e5ae4'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 134
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R31_S22_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'a94b5002-ff71-4cf6-95d6-9b858c42db6b'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 135
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R32_S00_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '3cf1d61c-a97c-4de5-a1f0-845550f10bfd'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 136
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R32_S01_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '234e1749-5e58-4c4c-8a21-4386e64e8fa2'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 137
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R32_S02_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'da813ba8-fe32-4956-b91f-1dff538d59fc'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 138
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R32_S10_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '02ba9497-5031-4c8c-93a6-9d22d05c16fd'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 139
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R32_S11_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'e41e850d-8b7c-41a0-91a1-bb520a1d28bb'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 140
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R32_S12_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '4997ee1a-fbec-4127-8fb8-dff706888627'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 141
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R32_S20_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'a9f330fa-ef99-490b-b43b-f70718924c81'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 142
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R32_S21_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'a0f30d81-1e7b-4c80-a141-eb114a6f3a29'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 143
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R32_S22_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'e15209b7-eea0-4a89-a0f6-e439b1837dfc'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 144
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R33_S00_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '2944258a-3bfd-4647-a75b-53154eb4a06d'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 145
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R33_S01_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'ceaca249-a7dd-4f2e-9521-f01b32040e83'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 146
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R33_S02_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '23d19762-63cb-4db9-8902-61c9b41769e1'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 147
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R33_S10_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '7ec94a77-6817-4324-996a-daf83cdbb6ac'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 148
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R33_S11_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '5bfeb472-0926-49fe-a0dd-d61b407544cd'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 149
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R33_S12_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '6d73f9cb-464e-422d-b0bf-93e038732370'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 150
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R33_S20_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '7594e6ae-a9a9-4f1f-82a2-564fa127272f'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 151
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R33_S21_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '0908ffaf-e61a-411c-83ad-d56031ebd9f5'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 152
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R33_S22_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'e736a5fd-de9c-4e8b-881a-acf4e65b0af7'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 153
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R34_S00_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '82c1e207-946b-4672-8d80-bc919491f79d'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 154
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R34_S01_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '9e8ddbea-d770-47ae-bb30-35c58bd56982'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 155
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R34_S02_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '81827e62-a99c-44e4-9145-ff23af7867db'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 156
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R34_S10_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'ff03cb43-dc32-4954-9c7b-87c4ebaf2460'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 157
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R34_S11_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'f54170d1-b17c-4923-bd56-d937780af857'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 158
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R34_S12_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'd9da6513-b971-4bc9-b3f7-795f78742357'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 159
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R34_S20_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'f678e9ea-013f-4511-ad25-3163b59bac84'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 160
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R34_S21_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '6dc07af2-0cba-4a24-8606-0df1dc60fcd4'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 161
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R34_S22_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '084083eb-e732-4309-baee-6a8ea1eb94f5'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 162
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R41_S00_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '2d744214-e821-4f23-930a-81a62ab1509d'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 163
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R41_S01_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '30a3d72e-bb47-4095-a4f0-e3f0ce03ec99'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 164
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R41_S02_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '6b4a942a-d54c-42d3-b252-df62194a7055'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 165
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R41_S10_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '83c22510-7c5d-4bd4-a97e-34a28993d763'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 166
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R41_S11_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'a3ef8a0f-f57d-44c2-bbfb-aae2119e4f01'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 167
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R41_S12_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'c5b7b624-115a-4ef0-a6d8-7d1d3c86b33f'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 168
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R41_S20_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '30c12f3d-f0f3-4779-9dd2-0b9be3d6d621'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 169
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R41_S21_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'a2ab91f5-63a6-4c77-89f8-55b404a48d5e'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 170
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R41_S22_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '619c1747-9af2-4a48-a281-1d379c3a556d'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 171
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R42_S00_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'f21f62ca-b03c-44e4-8ae2-a2136d635b6d'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 172
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R42_S01_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '43c02170-e547-4053-bd93-d862c130284e'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 173
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R42_S02_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '1887f35b-921a-4fcc-8dfe-5fe642585922'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 174
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R42_S10_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '74d4bfad-9c89-4647-b174-245c8f6001a9'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 175
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R42_S11_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '2adff92c-18e6-4627-b2af-4ac2b68a6914'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 176
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R42_S12_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '1f045774-195c-4c53-a0b6-1cd3153ac901'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 177
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R42_S20_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '501cbcf8-6a3c-4432-a920-45624735f91f'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 178
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R42_S21_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '3eccbd89-ee8a-4ca6-83bc-924a27a84eeb'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 179
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R42_S22_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'b7a85139-5d06-4520-902e-87b216435d6a'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 180
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R43_S00_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'f8170eee-40a9-42d6-a4e8-38a506d66823'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 181
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R43_S01_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '29c25fb4-37c7-47d1-a160-ac4fbdcd26e4'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 182
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R43_S02_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '467ee0c0-2081-4edf-b3be-a2afec919c54'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 183
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R43_S10_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'b1e0f1b2-4da4-4b95-b988-2209854a1d97'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 184
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R43_S11_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'de69d333-0627-4941-971d-cab9d4d41244'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 185
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R43_S12_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '56e87f7c-eba7-4e86-b746-c94f457412a3'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 186
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R43_S20_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'f99b8635-195b-4bb2-8899-bac3f8b36ccf'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 187
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R43_S21_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid 'e7c8bbf0-9858-47d7-8d24-954d78cbdb51'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 188
+    path: LSSTCam-imSim/calib/curated/19700101T000000Z/bfk/bfk_LSSTCam-imSim_R43_S22_LSSTCam-imSim_calib_curated_19700101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+- type: dataset_type
+  name: bias
+  dimensions:
+  - instrument
+  - detector
+  storage_class: ExposureF
+  is_calibration: true
+- type: dataset
+  dataset_type: bias
+  run: 2.2i/calib/gen2/20220101T000000Z
+  records:
+  - dataset_id:
+    - !uuid 'c95a2dad-4458-4e5f-8c19-1bcd2b8f6744'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 164
+    path: 2.2i/calib/gen2/20220101T000000Z/bias/bias_LSSTCam-imSim_R41_S02_2_2i_calib_gen2_20220101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid '340a2bf8-964b-475c-80d1-acfa7808af0e'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 168
+    path: 2.2i/calib/gen2/20220101T000000Z/bias/bias_LSSTCam-imSim_R41_S20_2_2i_calib_gen2_20220101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+- type: dataset_type
+  name: cal_ref_cat_2_2
+  dimensions:
+  - htm7
+  storage_class: SimpleCatalog
+  is_calibration: false
+- type: dataset
+  dataset_type: cal_ref_cat_2_2
+  run: refcats/cal_ref_cat_2_2
+  records:
+  - dataset_id:
+    - !uuid 'd96c92fe-b446-42d8-8041-772da9f8bdc4'
+    data_id:
+    - htm7: 147092
+    path: refcats/cal_ref_cat_2_2/cal_ref_cat_2_2/cal_ref_cat_2_2_147092_refcats_cal_ref_cat_2_2.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+  - dataset_id:
+    - !uuid '9cf89113-d1ff-45a2-9399-7ac823cfefcc'
+    data_id:
+    - htm7: 147160
+    path: refcats/cal_ref_cat_2_2/cal_ref_cat_2_2/cal_ref_cat_2_2_147160_refcats_cal_ref_cat_2_2.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+- type: dataset_type
+  name: camera
+  dimensions:
+  - instrument
+  storage_class: Camera
+  is_calibration: true
+- type: dataset
+  dataset_type: camera
+  run: LSSTCam-imSim/calib/unbounded
+  records:
+  - dataset_id:
+    - !uuid 'cbbcf263-eeda-4fb0-9f83-935899af436e'
+    data_id:
+    - instrument: LSSTCam-imSim
+    path: LSSTCam-imSim/calib/unbounded/camera/camera_LSSTCam-imSim_LSSTCam-imSim_calib_unbounded.fits
+    formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+- type: dataset_type
+  name: dark
+  dimensions:
+  - instrument
+  - detector
+  storage_class: ExposureF
+  is_calibration: true
+- type: dataset
+  dataset_type: dark
+  run: 2.2i/calib/gen2/20220101T000000Z
+  records:
+  - dataset_id:
+    - !uuid '7e09e6b4-7848-45f8-9db0-11c6bcb096ae'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 164
+    path: 2.2i/calib/gen2/20220101T000000Z/dark/dark_LSSTCam-imSim_R41_S02_2_2i_calib_gen2_20220101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid 'cfe4db50-61d0-4bb3-96ae-ebc54e80230c'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 168
+    path: 2.2i/calib/gen2/20220101T000000Z/dark/dark_LSSTCam-imSim_R41_S20_2_2i_calib_gen2_20220101T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+- type: dataset_type
+  name: flat
+  dimensions:
+  - band
+  - instrument
+  - detector
+  - physical_filter
+  storage_class: ExposureF
+  is_calibration: true
+- type: dataset
+  dataset_type: flat
+  run: 2.2i/calib/gen2/20220806T000000Z
+  records:
+  - dataset_id:
+    - !uuid 'd8503152-4166-48e5-a115-83edee4b1342'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 164
+      physical_filter: r_sim_1.4
+    path: 2.2i/calib/gen2/20220806T000000Z/flat/r/r_sim_1.4/flat_LSSTCam-imSim_r_r_sim_1_4_R41_S02_2_2i_calib_gen2_20220806T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid 'ddf6587e-1830-4c82-84ab-ed8ee8ee900a'
+    data_id:
+    - instrument: LSSTCam-imSim
+      detector: 168
+      physical_filter: r_sim_1.4
+    path: 2.2i/calib/gen2/20220806T000000Z/flat/r/r_sim_1.4/flat_LSSTCam-imSim_r_r_sim_1_4_R41_S20_2_2i_calib_gen2_20220806T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+- type: dataset_type
+  name: goodSeeingCoadd
+  dimensions:
+  - band
+  - skymap
+  - tract
+  - patch
+  storage_class: ExposureF
+  is_calibration: false
+- type: dataset
+  dataset_type: goodSeeingCoadd
+  run: templates/goodSeeing
+  records:
+  - dataset_id:
+    - !uuid '9eb08b79-278b-45fc-b678-5a3b4840ae80'
+    data_id:
+    - band: r
+      skymap: DC2
+      tract: 4431
+      patch: 10
+    path: templates/goodSeeing/goodSeeingCoadd/4431/10/r/goodSeeingCoadd_4431_10_r_DC2_templates_goodSeeing.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid '8eadbce5-ad7e-4576-9554-c70ccbbb19e7'
+    data_id:
+    - band: r
+      skymap: DC2
+      tract: 4431
+      patch: 16
+    path: templates/goodSeeing/goodSeeingCoadd/4431/16/r/goodSeeingCoadd_4431_16_r_DC2_templates_goodSeeing.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid '90c6d5dc-19a6-4364-be39-1c180bc957bb'
+    data_id:
+    - band: r
+      skymap: DC2
+      tract: 4431
+      patch: 17
+    path: templates/goodSeeing/goodSeeingCoadd/4431/17/r/goodSeeingCoadd_4431_17_r_DC2_templates_goodSeeing.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid 'bea523bf-e361-402d-a10d-7c7cc8299492'
+    data_id:
+    - band: r
+      skymap: DC2
+      tract: 4431
+      patch: 9
+    path: templates/goodSeeing/goodSeeingCoadd/4431/9/r/goodSeeingCoadd_4431_9_r_DC2_templates_goodSeeing.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+- type: dataset_type
+  name: skyMap
+  dimensions:
+  - skymap
+  storage_class: SkyMap
+  is_calibration: false
+- type: dataset
+  dataset_type: skyMap
+  run: skymaps
+  records:
+  - dataset_id:
+    - !uuid 'ce366fef-1dad-4076-92a3-ec2775bbf593'
+    data_id:
+    - skymap: DC2
+    path: skymaps/skyMap/skyMap_DC2_skymaps.pickle
+    formatter: lsst.daf.butler.formatters.pickle.PickleFormatter
+- type: associations
+  collection: 2.2i/calib/gen2
+  collection_type: CALIBRATION
+  validity_ranges:
+  - timespan: !lsst.daf.butler.Timespan
+      begin: !butler_time/tai/iso '2011-01-19 00:00:00.000000000'
+      end: !butler_time/tai/iso '2032-12-14 00:00:00.000000000'
+    dataset_ids:
+    - !uuid 'c95a2dad-4458-4e5f-8c19-1bcd2b8f6744'
+    - !uuid '340a2bf8-964b-475c-80d1-acfa7808af0e'
+    - !uuid '7e09e6b4-7848-45f8-9db0-11c6bcb096ae'
+    - !uuid 'cfe4db50-61d0-4bb3-96ae-ebc54e80230c'
+  - timespan: !lsst.daf.butler.Timespan
+      begin: !butler_time/tai/iso '2011-08-24 00:00:00.000000000'
+      end: !butler_time/tai/iso '2033-07-19 00:00:00.000000000'
+    dataset_ids:
+    - !uuid 'd8503152-4166-48e5-a115-83edee4b1342'
+    - !uuid 'ddf6587e-1830-4c82-84ab-ed8ee8ee900a'
+- type: associations
+  collection: LSSTCam-imSim/calib/curated
+  collection_type: CALIBRATION
+  validity_ranges:
+  - timespan: !lsst.daf.butler.Timespan
+      begin: !butler_time/tai/iso '1970-01-01 00:00:08.000082000'
+      end: null
+    dataset_ids:
+    - !uuid '76f23ae8-0fe6-4586-9b65-6442fbd0c5c0'
+    - !uuid 'aa46516b-9f23-4dbc-bee5-4b8bbeb07a9e'
+    - !uuid '4c561798-8de3-4f07-bffc-c0dff51fa609'
+    - !uuid 'f6937f74-0b65-4b22-b858-7a04a5b9c247'
+    - !uuid '941d9ab6-3573-436d-9c43-4d430612003b'
+    - !uuid '41221f30-48dd-443e-96a0-32847cb74621'
+    - !uuid 'efbc84ec-9b4f-4d35-833d-5c9051f68bae'
+    - !uuid '9d2ac504-6ce8-4ec5-a140-4b1eb40fa201'
+    - !uuid 'ece849c1-7bc7-47a4-adf1-e2f8d8e27364'
+    - !uuid 'cdf25055-9927-48dc-ad82-c56c9bf876c2'
+    - !uuid '21fbba27-0c57-45e3-b11a-47f6c6cff1cf'
+    - !uuid '39186af0-cb9a-4da6-8a2b-e08d3d102bc3'
+    - !uuid 'ed66d669-0d5a-4a0a-90cf-64b61682d008'
+    - !uuid '3d1fbf56-c17a-4c4c-86b3-342aa05f2062'
+    - !uuid '2620f860-2748-4492-a9b2-ec6bb0667819'
+    - !uuid 'c188a12b-4ed9-47c4-8d70-c809472db73d'
+    - !uuid '7b770b75-5287-4deb-b2b2-f06d97ddf1c0'
+    - !uuid '6422ee2a-2cbb-4092-882f-2d7c77cecaf4'
+    - !uuid '860b1b8e-3134-422b-8ec3-2c436a3b4b13'
+    - !uuid '9a3adcf9-47f1-418d-a7eb-aee5b636facf'
+    - !uuid '318ff34c-6e55-4a1c-9e86-5c019d7510b0'
+    - !uuid '21153af7-79f5-4ff7-a793-567c73eba914'
+    - !uuid '3a8f3485-f39d-4857-9ec0-856074da6c2f'
+    - !uuid '8b4cd719-66a5-426e-9737-2a0290a0972c'
+    - !uuid '5fb003ee-342a-4bc4-9a9c-26bb0a795358'
+    - !uuid 'c41481c8-7fd0-4e72-879a-ce003b6e0cc6'
+    - !uuid '8f1cc87a-8dbf-4580-851e-a9a56891a668'
+    - !uuid '280a99f7-f278-4a20-b166-e38fb62bd335'
+    - !uuid '7444fd5b-0e64-4c2c-ad98-8ab6e0c21c29'
+    - !uuid '7c1e66ea-f1db-439b-a1d8-a689e9c5105a'
+    - !uuid 'ccf75e66-538a-4f35-be42-79cbe5890dd3'
+    - !uuid 'c690a6d2-dee3-4596-a726-34fcbc422abc'
+    - !uuid '8f2a1ee0-48b1-4501-9101-29c2bd26bfca'
+    - !uuid '58c37311-638e-4e3c-934a-5f246b67ad19'
+    - !uuid '1e1e043f-13d4-4abe-bc23-b530af23b496'
+    - !uuid '79a45bbd-96d6-4574-8e45-872420793a33'
+    - !uuid '5c79fa14-6c80-4f7b-8089-959e47ffdd8a'
+    - !uuid 'ad774b6a-3ae3-468c-bd69-db908b99ea28'
+    - !uuid '4abae83e-699e-4c62-a2ca-47c25fd1a8ab'
+    - !uuid '4c06f9d8-8635-4208-b363-580758bceb54'
+    - !uuid '4cdae3b7-bbd8-4ac8-ae4f-4d1bf82ebbdd'
+    - !uuid '44240fef-7ff6-4bc6-a683-79893b4001a7'
+    - !uuid 'ff04f3d8-67e6-49df-a9cd-ae7854bf680b'
+    - !uuid 'bd6a1619-e32a-4f19-9f15-e7447d804053'
+    - !uuid 'dd45a8b8-f3c1-4dbe-aee2-fe4faf49462e'
+    - !uuid '1619d6a4-53e2-4705-a4c2-4d9358d4dd8a'
+    - !uuid '361b2f1a-c424-408b-845c-895ed078e6f9'
+    - !uuid '8681e626-0ce6-4fea-963d-aa6ff6b88a6e'
+    - !uuid '0d686de2-32bc-4509-b555-a330d5823ccc'
+    - !uuid '1fa18dbd-2c54-4926-8d02-96afdb04b5fd'
+    - !uuid 'f03231d0-fd14-4146-9c84-3a5b4473119e'
+    - !uuid '6cf8fb56-174e-4d54-951e-0dba77001f4a'
+    - !uuid 'acde1acd-96e9-4d6b-a430-e6b15814d553'
+    - !uuid 'd0681911-6d0f-4612-bca1-acbf2c00ccaa'
+    - !uuid 'e0367810-d4a7-4a56-bbb5-9edb44deb2a2'
+    - !uuid 'd6075a71-ae28-4161-b566-ade6dcf904fd'
+    - !uuid '834f2eb2-ddd5-4647-b1a4-e8c760dce6be'
+    - !uuid '040db7e1-d476-43fa-a85a-a1cf325c0f9e'
+    - !uuid 'e46f418f-e9eb-4c59-8539-537fdd9320b1'
+    - !uuid '6bdfb3c7-55c9-4ea4-8497-593e86b0b1a8'
+    - !uuid '1febece7-6a4d-47e7-9cba-05a228fdf500'
+    - !uuid '01cda5d7-bf85-44de-bb74-8e5202240392'
+    - !uuid 'e3a91cc2-2d04-4a9a-aae0-a39abd44f86f'
+    - !uuid '38564424-1205-4945-ae85-3cb4f0ff98ae'
+    - !uuid '0fffcbed-39de-466b-9538-41147505883e'
+    - !uuid '6f444b1e-075d-4c57-917f-26d436d5d8b0'
+    - !uuid 'eec255d8-7e41-4784-8427-48eb070b008e'
+    - !uuid '9d042e71-c1ff-4559-b3ee-8879bc92eb37'
+    - !uuid '107bfdd6-686c-4b37-a71e-bbc2b1ffe4de'
+    - !uuid 'b73e2124-99de-4d7b-8bdd-729e54eb8b7d'
+    - !uuid '87172aaa-b4ec-4717-9bca-708aeb6c55be'
+    - !uuid '3fc17a11-66d5-4496-9ae4-5fb0ffee5839'
+    - !uuid 'aafd17c3-4da0-4ecf-af28-9c8e831af485'
+    - !uuid '490bbf6a-0e90-45de-8518-d37378eb3e85'
+    - !uuid '5915227b-b8de-4639-b1d2-dc32e78e44be'
+    - !uuid 'a2d0d423-6ca7-4da9-89f5-2f038123aa53'
+    - !uuid 'd953bde4-3a0d-4ce3-a516-d9c0f0766473'
+    - !uuid '17412eda-0d7b-41e3-9258-8516d3baf286'
+    - !uuid 'b3bb0c3e-b964-4305-91e2-d159e3bf6963'
+    - !uuid 'a3a38734-f002-499d-896d-8595a4042375'
+    - !uuid '3ba920f4-98df-4b19-897a-c1c3593d72fd'
+    - !uuid '8824e795-1cad-41ba-9822-1c1439fe6db0'
+    - !uuid '7e352c52-c3ae-4f8f-b5ff-659f46cde4c9'
+    - !uuid '78f47d55-ee2c-4330-9248-5385dfccaa94'
+    - !uuid '0e5c7f0b-67e2-4b19-9329-e59c26a6db50'
+    - !uuid '52290460-f56b-4990-b4a5-2bf093e4bce3'
+    - !uuid '3d70897b-9f79-4496-a066-300e8e1d58cf'
+    - !uuid 'f0d0ee8e-ab8e-435c-8585-c7a46d80bf35'
+    - !uuid '9622f79b-685d-403f-9770-55f720c5d0a5'
+    - !uuid '4eff43b7-d9aa-4727-b2a7-6c1a541e55ef'
+    - !uuid 'e1a737b2-cee7-4e08-bb33-43d83d7494eb'
+    - !uuid '50dea846-cedb-4c0a-8a4e-7041ae4847e0'
+    - !uuid '13a9b8ea-6e2b-4ba0-b4d3-56964ca9f037'
+    - !uuid '6d97229c-a98e-4c8d-b5df-0865f89a7299'
+    - !uuid 'ce6d4d72-2881-4034-b08c-b5c3ac5fc01c'
+    - !uuid 'f20e1da1-a282-4da1-91d3-4450e978beff'
+    - !uuid '24e754d1-d1b1-4bf0-99ac-0b6f58d1040c'
+    - !uuid '264e2c15-f087-40ef-835f-dfc7399e51ad'
+    - !uuid '2e8fb0c4-affb-4728-884d-74ad9a35d3d9'
+    - !uuid '8b971c00-e8ec-414f-a814-01ea444fab3f'
+    - !uuid 'ca0c363a-1afb-4afb-bab6-c472ca433e51'
+    - !uuid '24ca7c75-95b4-48f4-8ad1-3ee6aa86256e'
+    - !uuid '7b310447-8173-4144-b0ad-d8fa67b99ce8'
+    - !uuid 'd52bf089-853b-4a68-8b02-daa8e2bbf08d'
+    - !uuid 'c0e284ce-2e9e-4e2f-9d0e-741020f49edf'
+    - !uuid '56de4dc7-ae40-4749-a247-1c8a79749962'
+    - !uuid 'b4cf7260-fc2e-4dfd-af79-8e00bd87c029'
+    - !uuid 'a1b4bf18-7076-447e-81b7-0e9ede43411f'
+    - !uuid 'd059814b-af81-4921-bd32-fb3a013e8289'
+    - !uuid '7efddb3a-0df8-4115-9470-b2bf53244d81'
+    - !uuid '95e27fc5-f766-4ed8-b019-51d53e605288'
+    - !uuid '67b16874-2bea-442b-bc1d-d049800901d4'
+    - !uuid '9e0d8ca3-4461-48a6-b0d8-203b07e857b6'
+    - !uuid '29093a21-f56e-4a1d-ae6a-77d5c72c86c3'
+    - !uuid '88bff385-3b3f-4080-951e-a338e8cae405'
+    - !uuid 'c0ec0d03-c1e6-4120-a08e-2eac58bc0375'
+    - !uuid '5b4937d9-3b27-4ca7-ad6c-2cc5996c188d'
+    - !uuid '83b7b50a-9986-4fc9-860c-8f5928ad485d'
+    - !uuid '1e5cf79a-baad-4190-8c2b-8c4a672c5080'
+    - !uuid 'e42fd196-d49e-4cb1-a464-51a564174877'
+    - !uuid '73fc231f-59b6-4d0b-81d7-a34d2e8dde47'
+    - !uuid '365727d6-7a63-4e6d-a8ad-c1ac6d24b551'
+    - !uuid '3a6ecd65-29e5-4fce-885b-886756c9fc81'
+    - !uuid '0f3db270-3ade-4b72-ba7a-19b71a66c421'
+    - !uuid '59ddce08-4982-49c0-9237-56dfe1b7a6fb'
+    - !uuid 'cb94df09-e271-4bdb-a24f-8251c6708235'
+    - !uuid '8edbc4cb-1167-4199-ab0b-ecaeef546163'
+    - !uuid 'f4d1b7ed-7733-46b4-a98d-83ebe54f67d2'
+    - !uuid '67c9b55f-ebd4-4ac5-b7ca-be58466294a6'
+    - !uuid 'a5a9180f-0fb1-4c0e-b46b-fdddeb301bba'
+    - !uuid 'b71e4258-cfd5-443a-bc4f-eaa221e96620'
+    - !uuid 'c8ff122a-c009-4693-b558-7dac9e156ba2'
+    - !uuid '8e7416ad-c930-4303-959a-2e41d5b78753'
+    - !uuid 'cf69c945-0daa-42d6-b7d5-287ec7e1e348'
+    - !uuid 'b7fdd2c9-1a9b-49a1-b89a-763e898e5ae4'
+    - !uuid 'a94b5002-ff71-4cf6-95d6-9b858c42db6b'
+    - !uuid '3cf1d61c-a97c-4de5-a1f0-845550f10bfd'
+    - !uuid '234e1749-5e58-4c4c-8a21-4386e64e8fa2'
+    - !uuid 'da813ba8-fe32-4956-b91f-1dff538d59fc'
+    - !uuid '02ba9497-5031-4c8c-93a6-9d22d05c16fd'
+    - !uuid 'e41e850d-8b7c-41a0-91a1-bb520a1d28bb'
+    - !uuid '4997ee1a-fbec-4127-8fb8-dff706888627'
+    - !uuid 'a9f330fa-ef99-490b-b43b-f70718924c81'
+    - !uuid 'a0f30d81-1e7b-4c80-a141-eb114a6f3a29'
+    - !uuid 'e15209b7-eea0-4a89-a0f6-e439b1837dfc'
+    - !uuid '2944258a-3bfd-4647-a75b-53154eb4a06d'
+    - !uuid 'ceaca249-a7dd-4f2e-9521-f01b32040e83'
+    - !uuid '23d19762-63cb-4db9-8902-61c9b41769e1'
+    - !uuid '7ec94a77-6817-4324-996a-daf83cdbb6ac'
+    - !uuid '5bfeb472-0926-49fe-a0dd-d61b407544cd'
+    - !uuid '6d73f9cb-464e-422d-b0bf-93e038732370'
+    - !uuid '7594e6ae-a9a9-4f1f-82a2-564fa127272f'
+    - !uuid '0908ffaf-e61a-411c-83ad-d56031ebd9f5'
+    - !uuid 'e736a5fd-de9c-4e8b-881a-acf4e65b0af7'
+    - !uuid '82c1e207-946b-4672-8d80-bc919491f79d'
+    - !uuid '9e8ddbea-d770-47ae-bb30-35c58bd56982'
+    - !uuid '81827e62-a99c-44e4-9145-ff23af7867db'
+    - !uuid 'ff03cb43-dc32-4954-9c7b-87c4ebaf2460'
+    - !uuid 'f54170d1-b17c-4923-bd56-d937780af857'
+    - !uuid 'd9da6513-b971-4bc9-b3f7-795f78742357'
+    - !uuid 'f678e9ea-013f-4511-ad25-3163b59bac84'
+    - !uuid '6dc07af2-0cba-4a24-8606-0df1dc60fcd4'
+    - !uuid '084083eb-e732-4309-baee-6a8ea1eb94f5'
+    - !uuid '2d744214-e821-4f23-930a-81a62ab1509d'
+    - !uuid '30a3d72e-bb47-4095-a4f0-e3f0ce03ec99'
+    - !uuid '6b4a942a-d54c-42d3-b252-df62194a7055'
+    - !uuid '83c22510-7c5d-4bd4-a97e-34a28993d763'
+    - !uuid 'a3ef8a0f-f57d-44c2-bbfb-aae2119e4f01'
+    - !uuid 'c5b7b624-115a-4ef0-a6d8-7d1d3c86b33f'
+    - !uuid '30c12f3d-f0f3-4779-9dd2-0b9be3d6d621'
+    - !uuid 'a2ab91f5-63a6-4c77-89f8-55b404a48d5e'
+    - !uuid '619c1747-9af2-4a48-a281-1d379c3a556d'
+    - !uuid 'f21f62ca-b03c-44e4-8ae2-a2136d635b6d'
+    - !uuid '43c02170-e547-4053-bd93-d862c130284e'
+    - !uuid '1887f35b-921a-4fcc-8dfe-5fe642585922'
+    - !uuid '74d4bfad-9c89-4647-b174-245c8f6001a9'
+    - !uuid '2adff92c-18e6-4627-b2af-4ac2b68a6914'
+    - !uuid '1f045774-195c-4c53-a0b6-1cd3153ac901'
+    - !uuid '501cbcf8-6a3c-4432-a920-45624735f91f'
+    - !uuid '3eccbd89-ee8a-4ca6-83bc-924a27a84eeb'
+    - !uuid 'b7a85139-5d06-4520-902e-87b216435d6a'
+    - !uuid 'f8170eee-40a9-42d6-a4e8-38a506d66823'
+    - !uuid '29c25fb4-37c7-47d1-a160-ac4fbdcd26e4'
+    - !uuid '467ee0c0-2081-4edf-b3be-a2afec919c54'
+    - !uuid 'b1e0f1b2-4da4-4b95-b988-2209854a1d97'
+    - !uuid 'de69d333-0627-4941-971d-cab9d4d41244'
+    - !uuid '56e87f7c-eba7-4e86-b746-c94f457412a3'
+    - !uuid 'f99b8635-195b-4bb2-8899-bac3f8b36ccf'
+    - !uuid 'e7c8bbf0-9858-47d7-8d24-954d78cbdb51'
+  - timespan: !lsst.daf.butler.Timespan
+      begin: null
+      end: null
+    dataset_ids:
+    - !uuid 'cbbcf263-eeda-4fb0-9f83-935899af436e'
