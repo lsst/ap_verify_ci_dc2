@@ -1,0 +1,9 @@
+# %ECSV 1.0
+# ---
+# datatype:
+# - {name: filename, datatype: string}
+# - {name: htm7, datatype: int64}
+# schema: astropy-2.0
+filename htm7
+refcats/cal_ref_cat_2_2/147160.fits 147160
+refcats/cal_ref_cat_2_2/147092.fits 147092
