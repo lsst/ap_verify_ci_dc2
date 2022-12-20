@@ -83,7 +83,7 @@ def _export(butler, export_file):
     Returns
     -------
     runs : iterable [`str`]
-        The names of the runs containing exported templates.
+        The names of the runs containing exported calibs.
     """
     with butler.export(filename=export_file, transfer=None) as contents:
         for name in CALIB_NAMES:
