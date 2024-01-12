@@ -8,3 +8,9 @@ imports:
   - location: $AP_VERIFY_DIR/pipelines/LSSTCam-imSim/ApVerify.yaml
 parameters:
   coaddName: goodSeeing
+tasks:
+  rbClassify:
+    class: lsst.meas.transiNet.RBTransiNetTask
+    config:
+      # Use dataset's model
+      file: $AP_VERIFY_CI_DC2_DIR/config/rbClassify.py
