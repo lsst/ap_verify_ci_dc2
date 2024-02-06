@@ -1,6 +1,6 @@
 description: Butler Data Repository Export
 version: 1.0.2
-universe_version: 3
+universe_version: 4
 universe_namespace: daf_butler
 data:
 - type: dimension
@@ -1234,6 +1234,12 @@ data:
   timespan_end: null
 - type: collection
   collection_type: RUN
+  name: pretrained_models/rbResnet50-DC2
+  host: null
+  timespan_begin: null
+  timespan_end: null
+- type: collection
+  collection_type: RUN
   name: refcats/cal_ref_cat_2_2
   host: null
   timespan_begin: null
@@ -1258,6 +1264,11 @@ data:
   - LSSTCam-imSim/calib/curated
 - type: collection
   collection_type: CHAINED
+  name: models
+  children:
+  - pretrained_models/rbResnet50-DC2
+- type: collection
+  collection_type: CHAINED
   name: refcats
   children:
   - refcats/cal_ref_cat_2_2
@@ -1269,6 +1280,7 @@ data:
   - skymaps
   - LSSTCam-imSim/calib
   - refcats
+  - models
 - type: dataset_type
   name: bfk
   dimensions:
@@ -2769,6 +2781,21 @@ data:
       patch: 9
     path: templates/goodSeeing/goodSeeingCoadd/4431/9/r/goodSeeingCoadd_4431_9_r_DC2_templates_goodSeeing.fits
     formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+- type: dataset_type
+  name: pretrainedModelPackage
+  dimensions: []
+  storage_class: NNModelPackagePayload
+  is_calibration: false
+- type: dataset
+  dataset_type: pretrainedModelPackage
+  run: pretrained_models/rbResnet50-DC2
+  records:
+  - dataset_id:
+    - !uuid 'fa4ac3d7-4c50-4f8b-9084-3c4f29176a27'
+    data_id:
+    - {}
+    path: pretrained_models/rbResnet50-DC2/pretrainedModelPackage/pretrainedModelPackage_pretrained_models_rbResnet50-DC2.zip
+    formatter: lsst.meas.transiNet.modelPackages.formatters.NNModelPackageFormatter
 - type: dataset_type
   name: skyMap
   dimensions:

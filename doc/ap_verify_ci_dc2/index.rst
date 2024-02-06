@@ -20,7 +20,7 @@ The input data were chosen arbitrarily, so they are not even suitable for testin
 Dataset contents
 ================
 
-The ``preloaded/`` butler repo contains two overlapping exposures of ``LSSTCam-imSim`` from DC2 ``tract=4431``, with ``patches=(9,10,16,17)``, ``goodSeeingCoadd`` datasets for those patches to make templates from, DC2 refcats covering that region, and skymaps and calibrations necessary to process the data.
+The ``preloaded/`` butler repo contains two overlapping exposures of ``LSSTCam-imSim`` from DC2 ``tract=4431``, with ``patches=(9,10,16,17)``, ``goodSeeingCoadd`` datasets for those patches to make templates from, DC2 refcats covering that region, and skymaps, calibrations, and pretrained ML models necessary to process the data.
 
 * visit=982985, detector=164
 * visit=943296, detector=168
