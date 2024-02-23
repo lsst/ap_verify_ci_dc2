@@ -10,7 +10,7 @@ imports:
 parameters:
   coaddName: goodSeeing
 tasks:
-  rbClassifyWithFakes:
+  rbClassify:
     class: lsst.meas.transiNet.RBTransiNetTask
     config:
       # Use dataset's model
