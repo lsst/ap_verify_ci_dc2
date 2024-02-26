@@ -5,7 +5,7 @@ description: Instrumented Alert Production pipeline specialized for ci_dc2
 # overrides, and importing both pipelines can't merge changes to the same task.
 
 imports:
-  - location: $AP_VERIFY_DIR/pipelines/LSSTCam-imSim/ApVerify.yaml
+  - location: $AP_VERIFY_DIR/pipelines/LSSTCam-imSim/ApVerifyCalibrate.yaml
 parameters:
   coaddName: goodSeeing
 tasks:

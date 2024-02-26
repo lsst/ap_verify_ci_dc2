@@ -8,7 +8,7 @@ description: Stub Alert Production pipeline
 # -c diaPipe:apdb.connection_timeout: 240
 
 imports:
-  - location: $AP_PIPE_DIR/pipelines/LSSTCam-imSim/ApPipe.yaml
+  - location: $AP_PIPE_DIR/pipelines/LSSTCam-imSim/ApPipeCalibrate.yaml
 tasks:
   rbClassify:
     class: lsst.meas.transiNet.RBTransiNetTask
