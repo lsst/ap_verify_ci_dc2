@@ -1,4 +1,3 @@
-# TODO DM-40388: This file will replace ApPipe.yaml, once the new pipeline is vetted.
 description: Stub Alert Production pipeline
 #
 # NOTES
@@ -9,7 +8,7 @@ description: Stub Alert Production pipeline
 # -c diaPipe:apdb.connection_timeout: 240
 
 imports:
-  - location: $AP_PIPE_DIR/pipelines/LSSTCam-imSim/ApPipeCalibrateImage.yaml
+  - location: $AP_PIPE_DIR/pipelines/LSSTCam-imSim/ApPipe.yaml
 tasks:
   rbClassify:
     class: lsst.meas.transiNet.RBTransiNetTask
