@@ -1,5 +1,5 @@
 #!/bin/bash
-# This file is part of ap_verify_ci_hits2015.
+# This file is part of ap_verify_ci_dc2.
 #
 # Developed for the LSST Data Management System.
 # This product includes software developed by the LSST Project

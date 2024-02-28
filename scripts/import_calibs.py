@@ -48,8 +48,8 @@ lsst.log.configure_pylog_MDC("DEBUG", MDC_class=None)
 
 def _make_parser():
     parser = argparse.ArgumentParser()
-    parser.add_argument("-b", dest="src_dir", default="/repo/dc2",
-                        help="Repo to import from, defaults to '/repo/dc2'.")
+    parser.add_argument("-b", dest="src_dir", default="/sdf/group/rubin/repo/dc2",
+                        help="Repo to import from, defaults to '/sdf/group/rubin/repo/dc2'.")
     parser.add_argument("-c", dest="src_collection", required=True,
                         help="Calib collection to import from.")
     return parser
