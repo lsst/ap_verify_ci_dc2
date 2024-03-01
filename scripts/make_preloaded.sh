@@ -10,12 +10,8 @@ bash scripts/make_empty_preloaded_butler.sh
 # get calibs from original repo
 python scripts/import_calibs.py -c 2.2i/calib
 
-# skymaps, as produced by export_skymaps.py
-butler import -t copy --export-file etc/skymaps.yaml preloaded/ /sdf/group/rubin/repo/dc2
-
 # templates
-butler register-dataset-type preloaded/ goodSeeingCoadd ExposureF band skymap tract patch
-butler ingest-files -t copy preloaded/ goodSeeingCoadd templates/goodSeeing etc/templates.ecsv
+python scripts/import_templates.py -t u/elhoward/DM-38451/templates -w "skymap='DC2' and tract=4431 and patch IN(9,10,16,17) and band='r'"
 
 # refcats
 python scripts/get_refcats.py
