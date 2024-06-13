@@ -1234,6 +1234,12 @@ data:
   timespan_end: null
 - type: collection
   collection_type: RUN
+  name: fake-injection-catalog
+  host: null
+  timespan_begin: null
+  timespan_end: null
+- type: collection
+  collection_type: RUN
   name: pretrained_models/rbResnet50-DC2
   host: null
   timespan_begin: null
@@ -1286,6 +1292,7 @@ data:
   - LSSTCam-imSim/calib
   - refcats
   - models
+  - fake-injection-catalog
 - type: dataset_type
   name: bfk
   dimensions:
@@ -2786,6 +2793,31 @@ data:
       patch: 9
     path: u/elhoward/DM-38451/templates/20230919T203936Z/goodSeeingCoadd/4431/9/r/goodSeeingCoadd_4431_9_r_DC2_u_elhoward_DM-38451_templates_20230919T203936Z.fits
     formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+- type: dataset_type
+  name: injection_catalog
+  dimensions:
+  - band
+  - htm7
+  storage_class: ArrowAstropy
+  is_calibration: false
+- type: dataset
+  dataset_type: injection_catalog
+  run: fake-injection-catalog
+  records:
+  - dataset_id:
+    - !uuid 'dde88d18-f588-40c1-83c4-36818d864c62'
+    data_id:
+    - band: r
+      htm7: 147092
+    path: fake-injection-catalog/injection_catalog/r/injection_catalog_r_147092_fake-injection-catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '4750a74e-7a6a-4001-b280-9429de86e47a'
+    data_id:
+    - band: r
+      htm7: 147160
+    path: fake-injection-catalog/injection_catalog/r/injection_catalog_r_147160_fake-injection-catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
 - type: dataset_type
   name: pretrainedModelPackage
   dimensions: []
