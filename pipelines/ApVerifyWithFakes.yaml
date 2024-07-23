@@ -10,7 +10,6 @@ imports:
 
 parameters:
   coaddName: goodSeeing
-  #fakesType: fakes_
 tasks:
   rbClassify:
     class: lsst.meas.transiNet.RBTransiNetTask
