@@ -19,10 +19,11 @@ python scripts/get_refcats.py
 # pretrained NN models
 python scripts/get_nn_models.py -m rbResnet50-DC2
 
+bash scripts/generate_fake_injection_catalog.sh -b preloaded -o fake-injection-catalog
+
 # collection chains
 butler collection-chain preloaded LSSTCam-imSim/defaults templates/goodSeeing skymaps LSSTCam-imSim/calib \
-    refcats models
-
+    refcats models fake-injection-catalog
 
 # make the export file for ap_verify to use
 python scripts/make_preloaded_export.py --dataset ap_verify_ci_dc2
