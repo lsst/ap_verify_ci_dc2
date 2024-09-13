@@ -1,6 +1,6 @@
 description: Butler Data Repository Export
 version: 1.0.2
-universe_version: 5
+universe_version: 7
 universe_namespace: daf_butler
 data:
 - type: dimension
