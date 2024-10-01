@@ -26,4 +26,4 @@ butler collection-chain preloaded LSSTCam-imSim/defaults templates/goodSeeing sk
     refcats models fake-injection-catalog
 
 # make the export file for ap_verify to use
-python scripts/make_preloaded_export.py --dataset ap_verify_ci_dc2
+python scripts/make_preloaded_export.py
