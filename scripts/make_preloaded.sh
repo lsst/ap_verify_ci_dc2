@@ -1,7 +1,9 @@
 #!/usr/bin/bash
 # Run this file to recreate preloaded into a fresh state.
 
+# Abort script on any error
 set -e
+# Echo all commands
 set -x
 
 SCRIPT_DIR="$( dirname -- "${BASH_SOURCE[0]}" )"
