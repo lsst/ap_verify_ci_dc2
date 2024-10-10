@@ -25,11 +25,15 @@ python "${SCRIPT_DIR}/get_refcats.py"
 # pretrained NN models
 python "${SCRIPT_DIR}/get_nn_models.py" -m rbResnet50-DC2
 
+# Precomputed fake sources
 bash "${SCRIPT_DIR}/generate_fake_injection_catalog.sh" -b preloaded -o fake-injection-catalog
+
+# Preloaded APDB catalogs
+python "${SCRIPT_DIR}/generate_self_preload.py"
 
 # collection chains
 butler collection-chain "${DATASET_REPO}" LSSTCam-imSim/defaults templates/goodSeeing skymaps LSSTCam-imSim/calib \
-    refcats models fake-injection-catalog
+    refcats dia_catalogs models fake-injection-catalog
 
 # make the export file for ap_verify to use
 python "${SCRIPT_DIR}/make_preloaded_export.py"
