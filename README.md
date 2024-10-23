@@ -19,7 +19,7 @@ path                  | description
 `raw`                 | Raw ImSim exposures.
 `config`              | Dataset-specific configs to help the Science Pipelines work with this dataset, including the butler `export.yaml` file used by `ap_verify.py`
 `pipelines`           | To be populated with dataset-specific pipelines. Currently contains three example files specialized for ImSim data.
-`preloaded`           | Starter Butler repo containing a skymap, calibs, coadds to use as difference imaging templates, ImSim refcats covering the relevant sky region, and a pretrained machine learning model for real/bogus classification.
+`preloaded`           | Starter Butler repo containing a skymap, calibs, coadds to use as difference imaging templates, ImSim refcats covering the relevant sky region, mock APDB outputs based on the raw images, and a pretrained machine learning model for real/bogus classification.
 `scripts`             | Scripts for regenerating this dataset.
 
 Butler Collections
@@ -33,6 +33,7 @@ collection              | description
 `refcats`               | Level 7 HTM shards from relevant reference catalogs.
 `skymaps`               | Skymaps for the template coadds.
 `templates/<type>`      | Coadd images produced by a compatible version of the LSST pipelines. For example, `deepCoadd` images go in a `templates/deep` collection.
+`dia_catalogs`          | Catalogs representing the contents of the APDB at the start of each visit.
 `models`                | Pretrained machine learning models.
 `<instrument>/defaults` | A chained collection linking all of the above.
 
