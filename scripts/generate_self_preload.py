@@ -53,12 +53,12 @@ lsst.log.configure_pylog_MDC("DEBUG", MDC_class=None)
 # Avoid explicit references to dataset package to maximize portability.
 SCRIPT_DIR = os.path.abspath(os.path.dirname(__file__))
 PIPE_DIR = os.path.join(SCRIPT_DIR, "..", "pipelines")
-RAW_DIR = os.path.join(SCRIPT_DIR, "..", "raw")
-RAW_RUN = "raw"
 PRELOAD_TYPES = ["preloaded_*"]
 DEST_DIR = os.path.join(SCRIPT_DIR, "..", "preloaded")
 DEST_COLLECTION = "dia_catalogs"
 DEST_RUN = DEST_COLLECTION + "/apdb"
+SOURCE_REPO = "/repo/dc2"
+SOURCE_COLLECTION = "u/abudlong/DM-46545/w_2024_46/DC2"
 
 
 ########################################
@@ -84,58 +84,6 @@ def _clear_preloaded(butler):
     butler.removeRuns([DEST_RUN], unstore=True)
 
 
-def _copy_repo_to(src_butler, repo_dir):
-    """Create a repository that's a copy of this one.
-
-    Parameters
-    ----------
-    src_butler : `lsst.daf.butler.Butler`
-        A Butler pointing to this repository.
-    repo_dir : `str`
-        The directory in which to create the new repository.
-
-    Returns
-    -------
-    butler : `lsst.daf.butler.Butler`
-        A writeable Butler to the new repo.
-    """
-    # Don't use ap_verify code, to avoid dependency on potentially out-of-date export.yaml
-    repo_config = Butler.makeRepo(repo_dir)
-    dest_butler = Butler(repo_config, writeable=True)
-    logging.debug("Temporary repo has universe version %d.", dest_butler.dimensions.version)
-    # Use export/import to preserve chained and calibration collections
-    with tempfile.NamedTemporaryFile(suffix=".yaml") as export_file:
-        with src_butler.export(filename=export_file.name, transfer=None) as contents:
-            for t in src_butler.registry.queryDatasetTypes():
-                contents.saveDatasets(
-                    src_butler.query_datasets(t, collections="*", find_first=False, explain=False))
-            # runs and dimensions included automatically
-            for coll in src_butler.collections.query("*", include_chains=True):
-                contents.saveCollection(coll)
-        dest_butler.import_(directory=DEST_DIR, filename=export_file.name, transfer="auto")
-    return dest_butler
-
-
-def _ingest_raws(repo, raw_dir, run):
-    """Ingest this dataset's raws into a specific repo.
-
-    Parameters
-    ---------
-    repo : `lsst.daf.butler.Butler`
-        A writeable Butler for the repository to ingest into.
-    raw_dir : `str`
-        The directory containing raw files.
-    run : `str`
-        The name of the run into which to import the raws.
-    """
-    raws = glob.glob(os.path.join(raw_dir, '**', '*.fits*'), recursive=True)
-    ingester = lsst.obs.base.RawIngestTask(butler=repo, config=lsst.obs.base.RawIngestConfig())
-    ingester.run(raws, run=run)
-    exposures = set(repo.registry.queryDataIds(["exposure"]))
-    definer = lsst.obs.base.DefineVisitsTask(butler=repo, config=lsst.obs.base.DefineVisitsConfig())
-    definer.run(exposures)
-
-
 def _check_pipeline(butler):
     """Confirm that the pipeline is correctly configured.
 
@@ -149,60 +97,6 @@ def _check_pipeline(butler):
     pipeline.addConfigOverride("parameters", "apdb_config", "foo")
     # Check that the configs load correctly; raises if there's a setup missing
     pipeline.to_graph()
-
-
-def _build_catalogs(repo_dir, input_collections, output_collection):
-    """Simulate an AP pipeline run.
-
-    Parameters
-    ----------
-    repo_dir : `str`
-        The repository on which to run the task.
-    input_collections : iterable [`str`]
-        The collection containing inputs.
-    output_collection : `str`
-        The collection into which to generate preloaded catalogs.
-
-    Raises
-    ------
-    RuntimeError
-        Raised on any pipeline failure.
-    """
-    # Should be only one instrument
-    butler = Butler(repo_dir)
-    instrument = butler.query_data_ids("instrument")[0]["instrument"]
-    visits = [coord["visit"] for coord in butler.query_data_ids("visit")]
-    pipeline_file = os.path.join(PIPE_DIR, "ApPipe.yaml")
-
-    # Create temporary APDB
-    apdb_location = f"sqlite:///{repo_dir}/apdb.db"
-    logging.debug("Creating apdb at %s...", apdb_location)
-    apdb_config = lsst.dax.apdb.ApdbSql.init_database(db_url=apdb_location)
-
-    with tempfile.NamedTemporaryFile(suffix=".py") as config_file:
-        apdb_config.save(config_file.name)
-
-        # Guarantee execution in observation order
-        run_exists = False
-        for visit in sorted(visits):
-            logging.info("Generating catalogs for visit %d...", visit)
-            pipeline_args = ["pipetask", "run",
-                             "--butler-config", repo_dir,
-                             "--pipeline", pipeline_file,
-                             "--config", f"parameters:apdb_config='{config_file.name}'",
-                             "--input", ",".join(input_collections),
-                             # Can reuse collection as long as data IDs don't overlap
-                             "--output-run", output_collection,
-                             "--data-query", f"instrument='{instrument}' and visit={visit}",
-                             "--processes", "6",
-                             "--register-dataset-types",
-                             ]
-            if run_exists:
-                pipeline_args.append("--extend-run")
-            results = subprocess.run(pipeline_args, capture_output=False, shell=False, check=False)
-            run_exists = True
-            if results.returncode:
-                raise RuntimeError("Pipeline failed to run; see log for details.")
 
 
 def _transfer_catalogs(catalog_types, src_repo, run, dest_repo):
@@ -235,19 +129,9 @@ preloaded = Butler(DEST_DIR, writeable=True)
 _check_pipeline(preloaded)
 logging.info("Removing old catalogs...")
 _clear_preloaded(preloaded)
-logging.info("Creating temporary repository...")
-with tempfile.TemporaryDirectory() as workspace:
-    temp_repo = _copy_repo_to(preloaded, workspace)
-    logging.info("Ingesting raws...")
-    _ingest_raws(temp_repo, RAW_DIR, RAW_RUN)
-    logging.info("Simulating DIA analysis...")
-    inst_name = temp_repo.query_data_ids("instrument")[0]["instrument"]
-    instrument = lsst.obs.base.Instrument.fromName(inst_name, temp_repo.registry)
-    _build_catalogs(workspace, [RAW_RUN, instrument.makeUmbrellaCollectionName()], DEST_RUN)
-    temp_repo.registry.refresh()    # Pipeline added dataset types
-    logging.debug("Preloaded repo has universe version %d.", preloaded.dimensions.version)
-    logging.info("Transferring catalogs to data set...")
-    _transfer_catalogs(PRELOAD_TYPES, temp_repo, DEST_RUN, preloaded)
+butler_dc2 = Butler(SOURCE_REPO, collections=SOURCE_COLLECTION)
+logging.info("Transferring catalogs to data set...")
+_transfer_catalogs(PRELOAD_TYPES, butler_dc2, DEST_RUN, preloaded)
 preloaded.collections.register(DEST_COLLECTION, CollectionType.CHAINED)
 preloaded.collections.prepend_chain(DEST_COLLECTION, DEST_RUN)
 
