@@ -131,7 +131,7 @@ logging.info("Removing old catalogs...")
 _clear_preloaded(preloaded)
 butler_dc2 = Butler(SOURCE_REPO, collections=SOURCE_COLLECTION)
 logging.info("Transferring catalogs to data set...")
-_transfer_catalogs(PRELOAD_TYPES, butler_dc2, DEST_RUN, preloaded)
+_transfer_catalogs(PRELOAD_TYPES, butler_dc2, SOURCE_COLLECTION, preloaded)
 preloaded.collections.register(DEST_COLLECTION, CollectionType.CHAINED)
 preloaded.collections.prepend_chain(DEST_COLLECTION, DEST_RUN)
 
