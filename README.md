@@ -15,7 +15,6 @@ Relevant Files and Directories
 path                  | description
 :---------------------|:-----------------------------
 `doc`                 | Contains Sphinx package documentation for the dataset. This documentation may be linked to from other packages, such as `ap_verify`.
-`etc`                 | Files necessary for reconstructing the repo (e.g. refcat yaml ingest files).
 `raw`                 | Raw ImSim exposures.
 `config`              | Dataset-specific configs to help the Science Pipelines work with this dataset, including the butler `export.yaml` file used by `ap_verify.py`
 `pipelines`           | To be populated with dataset-specific pipelines. Currently contains three example files specialized for ImSim data.
@@ -27,15 +26,16 @@ Butler Collections
 
 The butler repository in `preloaded/` contains the following collections; these may be chained collections containing arbitrarily-named runs.
 
-collection              | description
-:-----------------------|:-----------------------------
-`<instrument>/calib`    | Master calibration files for the data in the `raw` directory.
-`refcats`               | Level 7 HTM shards from relevant reference catalogs.
-`skymaps`               | Skymaps for the template coadds.
-`templates/<type>`      | Coadd images produced by a compatible version of the LSST pipelines. For example, `deepCoadd` images go in a `templates/deep` collection.
-`dia_catalogs`          | Catalogs representing the contents of the APDB at the start of each visit.
-`models`                | Pretrained machine learning models.
-`<instrument>/defaults` | A chained collection linking all of the above.
+collection               | description
+:------------------------|:-----------------------------
+`<instrument>/calib`     | Master calibration files for the data in the `raw` directory.
+`refcats`                | Level 7 HTM shards from relevant reference catalogs.
+`skymaps`                | Skymaps for the template coadds.
+`templates/<type>`       | Coadd images produced by a compatible version of the LSST pipelines. For example, `deepCoadd` images go in a `templates/deep` collection.
+`dia_catalogs`           | Catalogs representing the contents of the APDB at the start of each visit.
+`models`                 | Pretrained machine learning models.
+`fake-injection-catalog` | Pregenerated fake sources for completeness analysis.
+`<instrument>/defaults`  | A chained collection linking all of the above.
 
 Git LFS
 -------
