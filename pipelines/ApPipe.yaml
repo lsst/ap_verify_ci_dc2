@@ -10,8 +10,8 @@ description: Stub Alert Production pipeline
 imports:
   - location: $AP_PIPE_DIR/pipelines/LSSTCam-imSim/ApPipe.yaml
 tasks:
-  rbClassify:
+  computeReliability:
     class: lsst.meas.transiNet.RBTransiNetTask
     config:
       # Use dataset's model
-      file: $AP_VERIFY_CI_DC2_DIR/config/rbClassify.py
+      file: $AP_VERIFY_CI_DC2_DIR/config/computeReliability.py
