@@ -11,6 +11,11 @@ imports:
 parameters:
   coaddName: goodSeeing
 tasks:
+  rewarpTemplate:
+    # TODO: remove in DM-50200 when goodSeeingCoadd is renamed to template_coadd
+    class: lsst.ip.diffim.getTemplate.GetTemplateTask
+    config:
+      connections.coaddExposures: goodSeeingCoadd
   computeReliability:
     class: lsst.meas.transiNet.RBTransiNetTask
     config:
