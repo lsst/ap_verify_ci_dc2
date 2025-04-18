@@ -2838,88 +2838,88 @@ data:
     path: fake-injection-catalog/injection_catalog/r/injection_catalog_r_147160_fake-injection-catalog.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
 - type: dataset_type
-  name: preloaded_diaForcedSources
+  name: preloaded_dia_forced_source
   dimensions:
   - instrument
   - detector
   - group
-  storage_class: DataFrame
+  storage_class: ArrowAstropy
   is_calibration: false
 - type: dataset
-  dataset_type: preloaded_diaForcedSources
+  dataset_type: preloaded_dia_forced_source
   run: dia_catalogs/apdb
   records:
   - dataset_id:
-    - !uuid 'a6b02083-0049-4e7b-9fb3-5d582088dd1b'
+    - !uuid 'f57ebbff-146f-4688-80b2-fdd4b85ed0c6'
     data_id:
     - instrument: LSSTCam-imSim
       detector: 168
       group: '943296'
-    path: dia_catalogs/apdb/preloaded_diaForcedSources/943296/preloaded_diaForcedSources_LSSTCam-imSim_943296_R41_S20_dia_catalogs_apdb.parq
+    path: dia_catalogs/apdb/preloaded_dia_forced_source/943296/preloaded_dia_forced_source_LSSTCam-imSim_943296_R41_S20_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '8bb1f479-50e1-403f-bfcd-8e7e2e4524df'
+    - !uuid 'f317b66b-f0a3-4afc-8850-4187f7f202a4'
     data_id:
     - instrument: LSSTCam-imSim
       detector: 164
       group: '982985'
-    path: dia_catalogs/apdb/preloaded_diaForcedSources/982985/preloaded_diaForcedSources_LSSTCam-imSim_982985_R41_S02_dia_catalogs_apdb.parq
+    path: dia_catalogs/apdb/preloaded_dia_forced_source/982985/preloaded_dia_forced_source_LSSTCam-imSim_982985_R41_S02_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
 - type: dataset_type
-  name: preloaded_diaObjects
+  name: preloaded_dia_object
   dimensions:
   - instrument
   - detector
   - group
-  storage_class: DataFrame
+  storage_class: ArrowAstropy
   is_calibration: false
 - type: dataset
-  dataset_type: preloaded_diaObjects
+  dataset_type: preloaded_dia_object
   run: dia_catalogs/apdb
   records:
   - dataset_id:
-    - !uuid '723aa650-698b-40d6-b01a-4002b9921ebd'
+    - !uuid 'e3bd936c-3968-4e18-9378-31aba2a64b7d'
     data_id:
     - instrument: LSSTCam-imSim
       detector: 168
       group: '943296'
-    path: dia_catalogs/apdb/preloaded_diaObjects/943296/preloaded_diaObjects_LSSTCam-imSim_943296_R41_S20_dia_catalogs_apdb.parq
+    path: dia_catalogs/apdb/preloaded_dia_object/943296/preloaded_dia_object_LSSTCam-imSim_943296_R41_S20_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid 'be1c1cad-b7e1-4e2f-b0f2-0ec5c66456a5'
+    - !uuid '4a5f7af3-7c0f-433c-88e5-3af2ba9479ea'
     data_id:
     - instrument: LSSTCam-imSim
       detector: 164
       group: '982985'
-    path: dia_catalogs/apdb/preloaded_diaObjects/982985/preloaded_diaObjects_LSSTCam-imSim_982985_R41_S02_dia_catalogs_apdb.parq
+    path: dia_catalogs/apdb/preloaded_dia_object/982985/preloaded_dia_object_LSSTCam-imSim_982985_R41_S02_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
 - type: dataset_type
-  name: preloaded_diaSources
+  name: preloaded_dia_source
   dimensions:
   - instrument
   - detector
   - group
-  storage_class: DataFrame
+  storage_class: ArrowAstropy
   is_calibration: false
 - type: dataset
-  dataset_type: preloaded_diaSources
+  dataset_type: preloaded_dia_source
   run: dia_catalogs/apdb
   records:
   - dataset_id:
-    - !uuid '0b0b85ec-7509-4192-aeb4-3b569aae490f'
+    - !uuid '704c4928-322d-4321-8557-8839f6e353ea'
     data_id:
     - instrument: LSSTCam-imSim
       detector: 168
       group: '943296'
-    path: dia_catalogs/apdb/preloaded_diaSources/943296/preloaded_diaSources_LSSTCam-imSim_943296_R41_S20_dia_catalogs_apdb.parq
+    path: dia_catalogs/apdb/preloaded_dia_source/943296/preloaded_dia_source_LSSTCam-imSim_943296_R41_S20_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '0bbf567e-70a0-43bd-be4a-acf0775e09a7'
+    - !uuid 'e18d44b3-d06b-42c8-bc03-ac6fbd296131'
     data_id:
     - instrument: LSSTCam-imSim
       detector: 164
       group: '982985'
-    path: dia_catalogs/apdb/preloaded_diaSources/982985/preloaded_diaSources_LSSTCam-imSim_982985_R41_S02_dia_catalogs_apdb.parq
+    path: dia_catalogs/apdb/preloaded_dia_source/982985/preloaded_dia_source_LSSTCam-imSim_982985_R41_S02_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
 - type: dataset_type
   name: pretrainedModelPackage
