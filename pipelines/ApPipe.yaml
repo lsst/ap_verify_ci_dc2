@@ -9,6 +9,8 @@ description: Stub Alert Production pipeline
 
 imports:
   - location: $AP_PIPE_DIR/pipelines/LSSTCam-imSim/ApPipe.yaml
+    include:
+        - apPipe
 tasks:
   rewarpTemplate:
     # TODO: remove in DM-50200 when goodSeeingCoadd is renamed to template_coadd
