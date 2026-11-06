@@ -2850,7 +2850,7 @@ data:
   run: dia_catalogs/apdb
   records:
   - dataset_id:
-    - !uuid 'f57ebbff-146f-4688-80b2-fdd4b85ed0c6'
+    - !uuid '01a1ae8f-e25d-747b-9b04-040a1d75f9ed'
     data_id:
     - instrument: LSSTCam-imSim
       detector: 168
@@ -2858,7 +2858,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_forced_source/943296/preloaded_dia_forced_source_LSSTCam-imSim_943296_R41_S20_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid 'f317b66b-f0a3-4afc-8850-4187f7f202a4'
+    - !uuid '01a1ae92-cac1-7123-bfb4-64a7b8531aac'
     data_id:
     - instrument: LSSTCam-imSim
       detector: 164
@@ -2878,7 +2878,7 @@ data:
   run: dia_catalogs/apdb
   records:
   - dataset_id:
-    - !uuid 'e3bd936c-3968-4e18-9378-31aba2a64b7d'
+    - !uuid '01a1ae8f-e25d-7f01-a433-1363cc940244'
     data_id:
     - instrument: LSSTCam-imSim
       detector: 168
@@ -2886,7 +2886,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_object/943296/preloaded_dia_object_LSSTCam-imSim_943296_R41_S20_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '4a5f7af3-7c0f-433c-88e5-3af2ba9479ea'
+    - !uuid '01a1ae92-cac1-7db7-97a8-e4cfa253f6e1'
     data_id:
     - instrument: LSSTCam-imSim
       detector: 164
@@ -2906,7 +2906,7 @@ data:
   run: dia_catalogs/apdb
   records:
   - dataset_id:
-    - !uuid '704c4928-322d-4321-8557-8839f6e353ea'
+    - !uuid '01a1ae8f-e25d-74e2-9a86-9461dd906963'
     data_id:
     - instrument: LSSTCam-imSim
       detector: 168
@@ -2914,7 +2914,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_source/943296/preloaded_dia_source_LSSTCam-imSim_943296_R41_S20_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid 'e18d44b3-d06b-42c8-bc03-ac6fbd296131'
+    - !uuid '01a1ae92-cac1-7753-864e-d07b98143cd8'
     data_id:
     - instrument: LSSTCam-imSim
       detector: 164
